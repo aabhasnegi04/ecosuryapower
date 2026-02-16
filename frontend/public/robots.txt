@@ -1,0 +1,11 @@
+# Eco Surya Power - Robots.txt
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://www.ecosuryapower.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 10
