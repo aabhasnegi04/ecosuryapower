@@ -2,8 +2,11 @@
 
 [build]
   base = "frontend"
-  command = "npm run build"
+  command = "npm ci && npm run build"
   publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
 
 # Redirect rules for React Router
 [[redirects]]
