@@ -4,31 +4,31 @@ export default function VFDSolarPumpController() {
       
       {/* 1. HERO */}
       <section className="relative min-h-screen flex items-center" style={{ backgroundColor: '#fefefd' }}>
-        <div className="w-full px-6 md:px-12 lg:px-20 py-32 md:py-20">
+        <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 py-24 sm:py-28 md:py-20">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
               
               <div>
-                <div className="text-sm text-green-600 font-medium mb-6 uppercase tracking-wider">
+                <div className="text-xs sm:text-sm text-green-600 font-medium mb-3 sm:mb-4 md:mb-6 uppercase tracking-wider">
                   Sunfarm Series
                 </div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.05] text-[#0B0D10]">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 md:mb-8 leading-[1.05] text-[#0B0D10]">
                   VFD Solar Pump<br />Controller
                 </h1>
-                <p className="text-2xl md:text-3xl mb-12 font-light text-[#475063]">
+                <p className="text-base sm:text-lg md:text-2xl lg:text-3xl mb-6 sm:mb-8 md:mb-12 font-light text-[#475063]">
                   Efficient water pumping with solar power.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-20 md:mb-0">
                   <a 
                     href="/contact" 
-                    className="inline-block bg-green-600 text-white px-10 py-5 text-lg font-semibold hover:bg-green-700 transition-colors text-center"
+                    className="inline-block bg-green-600 text-white px-8 sm:px-10 py-3.5 sm:py-4 md:py-5 text-base sm:text-lg font-semibold hover:bg-green-700 transition-colors text-center rounded-lg"
                   >
                     Get Price
                   </a>
                   <a 
                     href="tel:+918860015074" 
-                    className="inline-block border-2 border-[#0B0D10] text-[#0B0D10] px-10 py-5 text-lg font-semibold hover:bg-[#0B0D10] hover:text-white transition-colors text-center"
+                    className="inline-block border-2 border-[#0B0D10] text-[#0B0D10] px-8 sm:px-10 py-3.5 sm:py-4 md:py-5 text-base sm:text-lg font-semibold hover:bg-[#0B0D10] hover:text-white transition-colors text-center rounded-lg"
                   >
                     Talk to Expert
                   </a>
@@ -39,7 +39,7 @@ export default function VFDSolarPumpController() {
                 <img 
                   src="/products/vfd-solarpump-controller.png" 
                   alt="Sunfarm Series VFD Solar Pump Controller" 
-                  className="w-full max-w-2xl"
+                  className="w-full max-w-md sm:max-w-lg md:max-w-2xl"
                 />
               </div>
 

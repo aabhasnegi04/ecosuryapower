@@ -14,31 +14,31 @@ export default function SolarPanelMonoPerc() {
       
       {/* 1. HERO */}
       <section className="relative min-h-screen flex items-center" style={{ backgroundColor: '#e4e8e8' }}>
-        <div className="w-full px-6 md:px-12 lg:px-20 py-32 md:py-20">
+        <div className="w-full px-4 sm:px-6 md:px-12 lg:px-20 py-24 sm:py-28 md:py-20">
           <div className="max-w-7xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-8 sm:gap-12 md:gap-16 items-center">
               
               <div>
-                <div className="text-sm text-green-600 font-medium mb-6 uppercase tracking-wider">
+                <div className="text-xs sm:text-sm text-green-600 font-medium mb-3 sm:mb-4 md:mb-6 uppercase tracking-wider">
                   Solar Panels
                 </div>
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 leading-[1.05] text-[#0B0D10]">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 md:mb-8 leading-[1.05] text-[#0B0D10]">
                   Mono Half-Cut /<br />Mono PERC
                 </h1>
-                <p className="text-2xl md:text-3xl mb-12 font-light text-[#475063]">
+                <p className="text-base sm:text-lg md:text-2xl lg:text-3xl mb-6 sm:mb-8 md:mb-12 font-light text-[#475063]">
                   Up to 21.21% efficiency. Works even in partial light.
                 </p>
                 
-                <div className="flex flex-col sm:flex-row gap-4">
+                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-20 md:mb-0">
                   <a 
                     href="/contact" 
-                    className="inline-block bg-green-600 text-white px-10 py-5 text-lg font-semibold hover:bg-green-700 transition-colors text-center"
+                    className="inline-block bg-green-600 text-white px-8 sm:px-10 py-3.5 sm:py-4 md:py-5 text-base sm:text-lg font-semibold hover:bg-green-700 transition-colors text-center rounded-lg"
                   >
                     Get Price
                   </a>
                   <a 
                     href="tel:+918860015074" 
-                    className="inline-block border-2 border-[#0B0D10] text-[#0B0D10] px-10 py-5 text-lg font-semibold hover:bg-[#0B0D10] hover:text-white transition-colors text-center"
+                    className="inline-block border-2 border-[#0B0D10] text-[#0B0D10] px-8 sm:px-10 py-3.5 sm:py-4 md:py-5 text-base sm:text-lg font-semibold hover:bg-[#0B0D10] hover:text-white transition-colors text-center rounded-lg"
                   >
                     Talk to Expert
                   </a>
@@ -49,7 +49,7 @@ export default function SolarPanelMonoPerc() {
                 <img 
                   src="/products/solar-panel-mono-half-cut-mono-perc.png" 
                   alt="Mono PERC Solar Panel" 
-                  className="w-full max-w-lg mt-12"
+                  className="w-full max-w-xs sm:max-w-sm md:max-w-lg mt-8 sm:mt-12"
                 />
               </div>
 
@@ -164,22 +164,22 @@ export default function SolarPanelMonoPerc() {
       </section>
 
       {/* 5. CTA */}
-      <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-[#0B0D10]">
+      <section className="py-16 sm:py-20 md:py-24 lg:py-32 bg-white mb-16 md:mb-0">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20 text-center">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-[#0B0D10]">
             Get expert advice
           </h2>
-          <p className="text-xl mb-12 text-[#475063]">
+          <p className="text-base sm:text-lg md:text-xl mb-8 sm:mb-10 md:mb-12 text-[#475063]">
             Talk to our solar specialists
           </p>
           <a 
             href="/contact" 
-            className="inline-block bg-green-600 text-white px-12 py-6 text-lg font-semibold hover:bg-green-700 transition-colors"
+            className="inline-block bg-green-600 text-white px-10 sm:px-12 py-4 sm:py-5 md:py-6 text-base sm:text-lg font-semibold hover:bg-green-700 transition-colors rounded-lg"
           >
             Get Free Consultation
           </a>
-          <div className="mt-6">
-            <a href="tel:+918860015074" className="text-lg text-[#475063] hover:text-green-600 transition-colors">
+          <div className="mt-4 sm:mt-6">
+            <a href="tel:+918860015074" className="text-sm sm:text-base md:text-lg text-[#475063] hover:text-green-600 transition-colors">
               or call +91 88600 15074
             </a>
           </div>
