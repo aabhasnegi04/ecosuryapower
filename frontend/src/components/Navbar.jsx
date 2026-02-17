@@ -225,8 +225,9 @@ export default function Navbar() {
   }
 
   return (
+    <>
     <motion.nav 
-      className={`absolute top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`absolute top-0 left-0 right-0 ${isOpen ? 'z-[101]' : 'z-50'} transition-all duration-300 ${
         isLightMode 
           ? scrolled 
             ? 'bg-white shadow-[0_8px_24px_rgba(0,0,0,0.06)]' 
@@ -514,17 +515,19 @@ export default function Navbar() {
             </svg>
           </button>
         </div>
+      </div>
+    </motion.nav>
 
-        {/* Mobile Navigation - Tesla Style Drill-Down */}
-        <AnimatePresence>
-          {isOpen && (
-            <motion.div 
-              className="md:hidden fixed inset-0 bg-white z-50 overflow-hidden"
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2 }}
-            >
+    {/* Mobile Navigation - Tesla Style Drill-Down - Outside nav for proper z-index */}
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div 
+          className="md:hidden fixed inset-0 bg-white z-[100] overflow-hidden"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.2 }}
+        >
               {/* Mobile Header */}
               <div className="flex items-center justify-between px-6 py-6 border-b border-zinc-200">
                 <img 
@@ -769,7 +772,6 @@ export default function Navbar() {
             </motion.div>
           )}
         </AnimatePresence>
-      </div>
-    </motion.nav>
+    </>
   )
 }
