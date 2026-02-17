@@ -30,8 +30,27 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Add form submission logic here
+    
+    // Create WhatsApp message with form details
+    const message = `Hi, I'm interested in solar solutions!
+
+Name: ${formData.fullName}
+Phone: ${formData.phone}
+City: ${formData.city}
+
+Please contact me for a free consultation.`;
+
+    // WhatsApp number (remove spaces and special characters)
+    const whatsappNumber = '918860015034';
+    
+    // Create WhatsApp URL with pre-filled message
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp
+    window.open(whatsappURL, '_blank');
+    
+    // Optional: Show success message or redirect
+    alert('Opening WhatsApp... Please click Send to complete your inquiry.');
   };
 
   const handleChange = (e) => {

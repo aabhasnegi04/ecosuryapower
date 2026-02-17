@@ -72,7 +72,24 @@ export default function LeadPopup() {
     
     await new Promise(resolve => setTimeout(resolve, 1500));
     
-    console.log('Form submitted:', formData);
+    // Create WhatsApp message with form details
+    const message = `Hi, I'm interested in solar solutions!
+
+Name: ${formData.name}
+Phone: ${formData.phone}
+City: ${formData.city}
+
+Please contact me for a free consultation.`;
+
+    // WhatsApp number (remove spaces and special characters)
+    const whatsappNumber = '918860015034';
+    
+    // Create WhatsApp URL with pre-filled message
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp
+    window.open(whatsappURL, '_blank');
+    
     setIsSubmitting(false);
     setIsSuccess(true);
     

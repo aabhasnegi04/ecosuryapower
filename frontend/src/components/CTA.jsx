@@ -1,4 +1,43 @@
+import { useState } from 'react';
+
 export default function CTA() {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    zipcode: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    
+    // Create WhatsApp message with form details
+    const message = `Hi, I'm interested in solar solutions!
+
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+ZIP Code: ${formData.zipcode}
+
+Please contact me for a free quote.`;
+
+    // WhatsApp number (remove spaces and special characters)
+    const whatsappNumber = '918860015034';
+    
+    // Create WhatsApp URL with pre-filled message
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+    // Open WhatsApp
+    window.open(whatsappURL, '_blank');
+  };
+
   return (
     <section className="bg-black text-white px-5 py-24 md:py-32 lg:py-40 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto">
@@ -13,27 +52,43 @@ export default function CTA() {
             Get a free, no-obligation quote in under 60 seconds.
           </p>
 
-          <form className="space-y-6 max-w-2xl">
+          <form className="space-y-6 max-w-2xl" onSubmit={handleSubmit}>
             <div className="grid md:grid-cols-2 gap-6">
               <input
                 type="text"
+                name="name"
                 placeholder="Full name"
+                value={formData.name}
+                onChange={handleChange}
+                required
                 className="bg-zinc-900 border border-zinc-800 px-6 py-4 text-lg focus:outline-none focus:border-zinc-600 transition-colors"
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Email address"
+                value={formData.email}
+                onChange={handleChange}
+                required
                 className="bg-zinc-900 border border-zinc-800 px-6 py-4 text-lg focus:outline-none focus:border-zinc-600 transition-colors"
               />
             </div>
             <input
               type="tel"
+              name="phone"
               placeholder="Phone number"
+              value={formData.phone}
+              onChange={handleChange}
+              required
               className="w-full bg-zinc-900 border border-zinc-800 px-6 py-4 text-lg focus:outline-none focus:border-zinc-600 transition-colors"
             />
             <input
               type="text"
+              name="zipcode"
               placeholder="ZIP code"
+              value={formData.zipcode}
+              onChange={handleChange}
+              required
               className="w-full bg-zinc-900 border border-zinc-800 px-6 py-4 text-lg focus:outline-none focus:border-zinc-600 transition-colors"
             />
             <button

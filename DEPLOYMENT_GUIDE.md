@@ -34,34 +34,50 @@ This creates a `dist` folder with your production-ready files.
 3. Drag the `frontend/dist` folder to Netlify's deploy zone
 4. Your site is live!
 
-### Step 3: Connect Custom Domain
+### Step 3: Buy Domain from Hostinger
+
+1. Go to https://hostinger.com
+2. Search for `ecosuryapower.com`
+3. **Buy ONLY the domain** (around $0.99 first year, ~$10-12/year renewal)
+4. Complete the purchase
+
+### Step 4: Connect Domain to Netlify
 
 1. In Netlify dashboard, go to "Domain settings"
 2. Click "Add custom domain"
 3. Enter: `ecosuryapower.com`
-4. Netlify will provide DNS records
+4. Netlify will show you DNS records to add
 
-5. **Update DNS at your domain registrar:**
+### Step 5: Update DNS at Hostinger
 
-   **Option A: Using Netlify DNS (Easiest)**
-   - Point your domain's nameservers to Netlify's nameservers
-   - Netlify will show you the nameservers to use
-
-   **Option B: Using Your Current DNS Provider**
-   Add these records at your domain registrar:
+1. Login to Hostinger dashboard
+2. Go to **Domains** → Click on `ecosuryapower.com` → **DNS / Name Servers**
+3. Click **Manage** next to DNS Records
+4. Add these records:
    
    ```
    Type: A
    Name: @
    Value: 75.2.60.5
+   TTL: 3600
    
    Type: CNAME
    Name: www
    Value: [your-site-name].netlify.app
+   TTL: 3600
    ```
+   
+   (Replace `[your-site-name]` with your actual Netlify site name)
 
-6. Wait for DNS propagation (can take 24-48 hours, usually faster)
-7. Netlify automatically provisions SSL certificate (HTTPS)
+5. **Delete any existing A or CNAME records** for @ and www if they exist
+6. Save changes
+
+### Step 6: Wait for DNS Propagation
+
+- Usually takes 15 minutes to 2 hours
+- Can take up to 24-48 hours in rare cases
+- Check status at: https://dnschecker.org
+- Netlify automatically provisions FREE SSL certificate (HTTPS)
 
 ---
 

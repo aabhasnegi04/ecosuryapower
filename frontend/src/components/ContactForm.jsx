@@ -4,9 +4,41 @@ import { useState } from 'react'
 export default function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isVisible, setIsVisible] = useState(false)
+  const [formData, setFormData] = useState({
+    name: '',
+    phone: '',
+    city: ''
+  })
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    })
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    
+    // Create WhatsApp message with form details
+    const message = `Hi, I'm interested in solar solutions!
+
+Name: ${formData.name}
+Phone: ${formData.phone}
+City: ${formData.city}
+
+Please contact me for a free consultation.`
+
+    // WhatsApp number (remove spaces and special characters)
+    const whatsappNumber = '918860015034'
+    
+    // Create WhatsApp URL with pre-filled message
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`
+    
+    // Open WhatsApp
+    window.open(whatsappURL, '_blank')
+    
+    // Show success message
     setIsSubmitted(true)
   }
 
@@ -103,21 +135,30 @@ export default function ContactForm() {
               
               <input
                 type="text"
+                name="name"
                 placeholder="Your name"
+                value={formData.name}
+                onChange={handleChange}
                 required
                 className="w-full bg-zinc-900 border border-zinc-800 px-5 py-4 text-base md:text-lg focus:outline-none focus:border-zinc-600 transition-colors rounded"
               />
               
               <input
                 type="tel"
+                name="phone"
                 placeholder="Phone number"
+                value={formData.phone}
+                onChange={handleChange}
                 required
                 className="w-full bg-zinc-900 border border-zinc-800 px-5 py-4 text-base md:text-lg focus:outline-none focus:border-zinc-600 transition-colors rounded"
               />
               
               <input
                 type="text"
+                name="city"
                 placeholder="Your city"
+                value={formData.city}
+                onChange={handleChange}
                 required
                 className="w-full bg-zinc-900 border border-zinc-800 px-5 py-4 text-base md:text-lg focus:outline-none focus:border-zinc-600 transition-colors rounded"
               />
