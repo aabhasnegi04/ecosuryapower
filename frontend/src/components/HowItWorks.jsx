@@ -78,7 +78,7 @@ export default function HowItWorks() {
               }`}
             >
               {/* Large faint number in background */}
-              <div className={`absolute -left-2 md:-left-4 -top-4 md:-top-6 text-[120px] md:text-[140px] lg:text-[160px] font-bold text-zinc-100 leading-none select-none pointer-events-none transition-opacity duration-700 ${
+              <div className={`absolute -left-2 md:-left-4 -top-4 md:-top-6 text-[120px] md:text-[140px] lg:text-[160px] font-bold text-zinc-200 leading-none select-none pointer-events-none transition-opacity duration-700 ${
                 visibleSteps.includes(index) ? 'opacity-100' : 'opacity-0'
               }`}>
                 {step.number}
