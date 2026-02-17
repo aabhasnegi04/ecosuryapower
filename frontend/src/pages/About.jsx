@@ -83,21 +83,14 @@ export default function About() {
                 Built for real homes. Real weather. Real reliability.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center items-center px-4">
+              <div className="flex justify-center items-center px-4">
                 <a 
-                  href="/solutions" 
+                  href="/contact" 
                   className="w-full sm:w-auto inline-block bg-green-600 text-white px-10 md:px-12 py-5 md:py-6 text-base md:text-lg font-semibold hover:bg-green-700 transition-all duration-300 text-center"
                   style={{ 
                     borderRadius: '14px',
                     boxShadow: '0 20px 60px rgba(34, 197, 94, 0.4)'
                   }}
-                >
-                  Explore Solutions
-                </a>
-                <a 
-                  href="/contact" 
-                  className="w-full sm:w-auto inline-block border-2 border-white text-white px-10 md:px-12 py-5 md:py-6 text-base md:text-lg font-semibold hover:bg-white hover:text-black transition-all duration-300 text-center"
-                  style={{ borderRadius: '14px' }}
                 >
                   Get Free Consultation
                 </a>
