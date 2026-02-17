@@ -32,13 +32,13 @@ export default function Contact() {
     e.preventDefault();
     
     // Create WhatsApp message with form details
-    const message = `Hi! 👋 I'm interested in solar solutions! ☀️
+    const message = `Hi, I'm interested in solar solutions!
 
-👤 Name: ${formData.fullName}
-📱 Phone: ${formData.phone}
-📍 City: ${formData.city}
+Name: ${formData.fullName}
+Phone: ${formData.phone}
+City: ${formData.city}
 
-Please call me back. Thank you! 🙏`;
+Please call me back. Thank you!`;
 
     // WhatsApp number (remove spaces and special characters)
     const whatsappNumber = '918860015034';

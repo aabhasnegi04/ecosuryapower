@@ -19,14 +19,14 @@ export default function CTA() {
     e.preventDefault();
     
     // Create WhatsApp message with form details
-    const message = `Hi! 👋 I'm interested in solar solutions! ☀️
+    const message = `Hi, I'm interested in solar solutions!
 
-👤 Name: ${formData.name}
-📧 Email: ${formData.email}
-📱 Phone: ${formData.phone}
-📮 ZIP Code: ${formData.zipcode}
+Name: ${formData.name}
+Email: ${formData.email}
+Phone: ${formData.phone}
+ZIP Code: ${formData.zipcode}
 
-Please call me back. Thank you! 🙏`;
+Please call me back. Thank you!`;
 
     // WhatsApp number (remove spaces and special characters)
     const whatsappNumber = '918860015034';
