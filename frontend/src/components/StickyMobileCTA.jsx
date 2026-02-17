@@ -44,7 +44,10 @@ export default function StickyMobileCTA() {
                 className="flex-1 bg-zinc-900 text-white text-center py-3.5 font-semibold text-base hover:bg-zinc-800 transition-colors"
                 onClick={() => {
                   // Scroll to contact form
-                  document.querySelector('form')?.scrollIntoView({ behavior: 'smooth' })
+                  const contactForm = document.getElementById('contact-form');
+                  if (contactForm) {
+                    contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  }
                 }}
                 whileTap={{ scale: 0.95 }}
               >

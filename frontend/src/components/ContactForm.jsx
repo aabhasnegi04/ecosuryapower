@@ -21,13 +21,13 @@ export default function ContactForm() {
     e.preventDefault()
     
     // Create WhatsApp message with form details
-    const message = `Hi, I'm interested in solar solutions!
+    const message = `Hi! 👋 I'm interested in solar solutions! ☀️
 
-Name: ${formData.name}
-Phone: ${formData.phone}
-City: ${formData.city}
+👤 Name: ${formData.name}
+📱 Phone: ${formData.phone}
+📍 City: ${formData.city}
 
-Please contact me for a free consultation.`
+Please call me back. Thank you! 🙏`
 
     // WhatsApp number (remove spaces and special characters)
     const whatsappNumber = '918860015034'
@@ -59,7 +59,7 @@ Please contact me for a free consultation.`
 
   if (isSubmitted) {
     return (
-      <section className="bg-black text-white py-24 md:py-32 lg:py-40">
+      <section id="contact-form" className="bg-black text-white py-24 md:py-32 lg:py-40">
         <div className="px-6 md:px-12 lg:px-20 max-w-5xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -84,7 +84,7 @@ Please contact me for a free consultation.`
   }
 
   return (
-    <section ref={sectionRef} className="bg-black text-white py-24 md:py-32 lg:py-40">
+    <section id="contact-form" ref={sectionRef} className="bg-black text-white py-24 md:py-32 lg:py-40">
       <motion.div 
         className="px-6 md:px-12 lg:px-20 max-w-6xl mx-auto"
         initial={{ opacity: 0, y: 20 }}
