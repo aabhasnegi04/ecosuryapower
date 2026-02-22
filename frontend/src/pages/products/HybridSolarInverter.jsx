@@ -48,115 +48,223 @@ export default function HybridSolarInverter() {
         </div>
       </section>
 
-      {/* 2. SPECS */}
-      <section className="py-12 sm:py-20 md:py-32 lg:py-40 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 md:gap-16 lg:gap-20">
-            <div className="text-center">
-              <div className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-green-600 leading-tight">5kVA</div>
-              <div className="text-lg sm:text-xl md:text-2xl text-zinc-400 my-0.5 sm:my-1">—</div>
-              <div className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-green-600 leading-tight mb-2 sm:mb-3 md:mb-4">150kVA</div>
-              <div className="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-zinc-500">Range</div>
+      {/* 2. TECHNICAL FEATURE GRID - Premium Spec Showcase */}
+      <section className="relative py-32 bg-gradient-to-b from-[#f8fafc] to-white">
+        <div className="max-w-7xl mx-auto px-6">
+          
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0B0D10]">
+              Engineered for Reliable Power Performance
+            </h2>
+            <p className="mt-5 text-lg text-gray-600">
+              Built with industry-grade components for durability, efficiency and long-term performance.
+            </p>
+          </div>
+
+          {/* Spec Grid */}
+          <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            
+            {/* Spec Card 1 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                5kVA – 150kVA
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                Wide Capacity Range
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Scalable systems for residential & commercial needs.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-green-600 leading-tight">Bi</div>
-              <div className="text-base sm:text-xl md:text-3xl lg:text-4xl font-bold text-green-600 mb-2 sm:mb-3 md:mb-4">Directional</div>
-              <div className="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-zinc-500">Inverter</div>
+
+            {/* Spec Card 2 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                Bi-Directional
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                Advanced Inverter
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Seamless grid interaction with intelligent energy flow.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-green-600 leading-none mb-2 sm:mb-3 md:mb-4">IGBT</div>
-              <div className="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-zinc-500">Rectifier</div>
+
+            {/* Spec Card 3 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                IGBT
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                High Efficiency Rectifier
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Superior conversion with minimal power loss.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
-            <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-green-600 leading-none mb-2 sm:mb-3 md:mb-4">DSP</div>
-              <div className="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-zinc-500">Multiple</div>
+
+            {/* Spec Card 4 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                DSP
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                Smart Control System
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Multiple protection layers & optimized power management.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* 3. KEY FEATURES */}
-      <section className="py-12 sm:py-16 md:py-24 lg:py-32 bg-zinc-50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 md:mb-16 text-center text-[#0B0D10]">
-            Advanced capabilities
-          </h2>
+      {/* 3. PRODUCT SHOWCASE - Premium Framed Panel Style */}
+      <section className="relative py-20 lg:py-44 overflow-hidden text-white">
+        {/* Dark Spotlight Background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#1F3A67_0%,#0C1629_70%)]"></div>
+        
+        {/* Subtle Center Light Layer */}
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_60%)]"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-6">
           
-          <div className="grid sm:grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:gap-8">
+          {/* Desktop: Centered Product with Side Callouts */}
+          <div className="hidden lg:flex items-center justify-center relative min-h-[600px]">
             
-            <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow-sm border border-zinc-100 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                </svg>
+            {/* Ambient Glow Behind Frame */}
+            <div className="absolute w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(30,80,160,0.25)_0%,transparent_70%)] blur-3xl"></div>
+            
+            {/* Premium Framed Product Panel */}
+            <div className="relative z-10 bg-gradient-to-b from-[#162B4F] to-[#101D34] p-16 rounded-3xl shadow-[0_80px_140px_rgba(0,0,0,0.85)] border border-white/10 hover:scale-[1.01] transition duration-500 ease-out">
+              <div className="bg-[#F4F6F8] p-8 rounded-2xl shadow-inner">
+                <img 
+                  src="/products/hybrid-solar-inverter.png" 
+                  alt="Hybrid Solar Inverter" 
+                  className="w-[340px] mx-auto"
+                />
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-[#0B0D10]">Bidirectional Inverter</h3>
-              <p className="text-sm sm:text-base text-[#475063] leading-relaxed">
-                Power flows both ways - from grid to battery and battery to grid
-              </p>
             </div>
-
-            <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow-sm border border-zinc-100 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM14 5a1 1 0 011-1h4a1 1 0 011 1v7a1 1 0 01-1 1h-4a1 1 0 01-1-1V5zM4 16a1 1 0 011-1h4a1 1 0 011 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-3zM14 16a1 1 0 011-1h4a1 1 0 011 1v3a1 1 0 01-1 1h-4a1 1 0 01-1-1v-3z" />
-                </svg>
+            
+            {/* LEFT FEATURES */}
+            <div className="absolute left-0 space-y-20 z-20 -translate-x-32">
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">Bidirectional Inverter</h4>
+                  <p className="text-sm text-white/50 mt-1">Power flows both ways</p>
+                </div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-[#0B0D10]">Flexibility in Design</h3>
-              <p className="text-sm sm:text-base text-[#475063] leading-relaxed">
-                Adaptable system architecture for diverse installation requirements
-              </p>
-            </div>
-
-            <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow-sm border border-zinc-100 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">IGBT Based Rectifier</h4>
+                  <p className="text-sm text-white/50 mt-1">High-efficiency conversion</p>
+                </div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-[#0B0D10]">Grid Utilization</h3>
-              <p className="text-sm sm:text-base text-[#475063] leading-relaxed">
-                Intelligent grid management for optimal energy usage and cost savings
-              </p>
-            </div>
-
-            <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow-sm border border-zinc-100 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                </svg>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">Multiple DSP Control</h4>
+                  <p className="text-sm text-white/50 mt-1">Advanced digital processing</p>
+                </div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-[#0B0D10]">Battery-Less Operation</h3>
-              <p className="text-sm sm:text-base text-[#475063] leading-relaxed">
-                Can operate without batteries for grid-tied solar applications
-              </p>
+              
             </div>
-
-            <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow-sm border border-zinc-100 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                </svg>
+            
+            {/* RIGHT FEATURES */}
+            <div className="absolute right-0 space-y-20 z-20 translate-x-32">
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">Flexibility in Design</h4>
+                  <p className="text-sm text-white/50 mt-1">Adaptable architecture</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-[#0B0D10]">IGBT Based Rectifier</h3>
-              <p className="text-sm sm:text-base text-[#475063] leading-relaxed">
-                High-efficiency power conversion with advanced IGBT technology
-              </p>
-            </div>
-
-            <div className="bg-white p-5 sm:p-6 md:p-8 rounded-xl shadow-sm border border-zinc-100 hover:shadow-md transition-shadow">
-              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center mb-3 sm:mb-4">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-                </svg>
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">Grid Utilization</h4>
+                  <p className="text-sm text-white/50 mt-1">Intelligent management</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
               </div>
-              <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold mb-2 sm:mb-3 text-[#0B0D10]">Multiple DSP Control</h3>
-              <p className="text-sm sm:text-base text-[#475063] leading-relaxed">
-                Advanced digital signal processing for superior performance and reliability
-              </p>
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">Battery-Less Operation</h4>
+                  <p className="text-sm text-white/50 mt-1">Grid-tied capability</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
             </div>
-
+            
           </div>
+          
+          {/* Mobile: Vertical Stack Layout */}
+          <div className="lg:hidden">
+            
+            {/* Product Frame */}
+            <div className="flex justify-center mb-12">
+              <div className="w-[90%] sm:w-[80%] md:w-[70%] bg-gradient-to-b from-[#162B4F] to-[#101D34] p-8 sm:p-10 md:p-12 rounded-3xl shadow-[0_80px_140px_rgba(0,0,0,0.85)] border border-white/10">
+                <div className="bg-[#F4F6F8] p-6 sm:p-8 rounded-2xl shadow-inner">
+                  <img 
+                    src="/products/hybrid-solar-inverter.png" 
+                    alt="Hybrid Solar Inverter" 
+                    className="w-full max-w-[280px] mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Features List */}
+            <div className="mt-12 space-y-8 px-6 text-center max-w-md mx-auto">
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Bidirectional Inverter</h4>
+                <p className="text-white/60 text-sm mt-1">Power flows both ways</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Flexibility in Design</h4>
+                <p className="text-white/60 text-sm mt-1">Adaptable architecture</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Grid Utilization</h4>
+                <p className="text-white/60 text-sm mt-1">Intelligent management</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Battery-Less Operation</h4>
+                <p className="text-white/60 text-sm mt-1">Grid-tied capability</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">IGBT Based Rectifier</h4>
+                <p className="text-white/60 text-sm mt-1">High-efficiency conversion</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Multiple DSP Control</h4>
+                <p className="text-white/60 text-sm mt-1">Advanced digital processing</p>
+              </div>
+              
+            </div>
+            
+          </div>
+          
         </div>
       </section>
 

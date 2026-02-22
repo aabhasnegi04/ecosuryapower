@@ -85,69 +85,17 @@ Please call me back. Thank you!`;
 
       <div className="min-h-screen bg-white">
         
-        {/* 1. HERO CONTACT SECTION */}
-        <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-32 pb-20">
-          
-          {/* Background Image with Blur */}
-          <div className="absolute inset-0">
-            <img 
-              src="/ResidentialSolar.jpg" 
-              alt="Solar Background" 
-              className="w-full h-full object-cover"
-              style={{ filter: 'blur(8px) brightness(0.4)' }}
-            />
-          </div>
-
-          {/* Gradient Overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-white"></div>
-
-          {/* Content */}
-          <div className="relative z-10 w-full px-4 sm:px-6 md:px-12 lg:px-20 text-center">
-            <div className="max-w-4xl mx-auto">
-              <h1 className="text-[2.5rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] font-bold mb-6 leading-[0.95] tracking-[-0.03em] text-white">
-                Powering your<br />journey starts here.
-              </h1>
-              <p className="text-xl md:text-2xl lg:text-3xl mb-12 text-white/90 leading-relaxed font-light">
-                Get expert guidance within 24 hours.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 md:gap-5 justify-center items-center">
-                <a 
-                  href="#contact-form" 
-                  className="w-full sm:w-auto inline-block bg-green-600 text-white px-12 py-6 text-lg font-semibold hover:bg-green-700 transition-all duration-300 text-center"
-                  style={{ 
-                    borderRadius: '14px',
-                    boxShadow: '0 20px 60px rgba(34, 197, 94, 0.4)'
-                  }}
-                >
-                  Get Free Consultation
-                </a>
-                <a 
-                  href="tel:+918860015074" 
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-3 border-2 border-white text-white px-12 py-6 text-lg font-semibold hover:bg-white hover:text-black transition-all duration-300"
-                  style={{ borderRadius: '14px' }}
-                >
-                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  Call Now
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* 2. FORM SECTION - Black Background Like Landing Page */}
-        <section id="contact-form" className="bg-black text-white py-24 md:py-32 lg:py-40">
+        {/* 1. FORM SECTION - Black Background - Now at Top */}
+        <section id="contact-form" className="bg-black text-white py-32 md:py-40 lg:py-48">
           <div className="px-6 md:px-12 lg:px-20 max-w-6xl mx-auto">
             
             <div className="grid md:grid-cols-2 gap-12 md:gap-16 lg:gap-20">
               
               {/* LEFT SIDE - Conviction */}
               <div className="flex flex-col justify-center observe">
-                <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-10 leading-tight">
+                <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-8 md:mb-10 leading-tight">
                   Talk to a solar expert
-                </h2>
+                </h1>
 
                 {/* Proof Points */}
                 <div className="space-y-4 mb-8 md:mb-10">
@@ -230,7 +178,7 @@ Please call me back. Thank you!`;
         </section>
 
 
-        {/* CONTACT INFO SECTION */}
+        {/* 2. CONTACT INFO SECTION */}
         <section className="py-20 md:py-32 bg-zinc-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
             

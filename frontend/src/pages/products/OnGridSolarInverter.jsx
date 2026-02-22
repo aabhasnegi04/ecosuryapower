@@ -48,32 +48,76 @@ export default function OnGridSolarInverter() {
         </div>
       </section>
 
-      {/* 2. SPECS */}
-      <section className="py-12 sm:py-20 md:py-32 lg:py-40 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 md:gap-16 lg:gap-20">
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-green-600 leading-tight">1</div>
-              <div className="text-3xl md:text-4xl font-bold text-green-600 mb-4">25kW</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">Range</div>
-            </div>
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-green-600 leading-none mb-4">97%</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">Efficiency</div>
-            </div>
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-green-600 leading-none mb-4">MC4</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">Connectors</div>
-            </div>
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-green-600 leading-none mb-4">IoT</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">Remote</div>
-            </div>
+      {/* 2. SPECS - Technical Feature Grid */}
+      <section className="relative py-32 bg-gradient-to-b from-[#f8fafc] to-white">
+        <div className="max-w-7xl mx-auto px-6">
+          
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Engineered for Grid-Tied Excellence
+            </h2>
+            <p className="mt-5 text-lg text-gray-600">
+              Built with advanced technology for maximum efficiency and seamless grid integration.
+            </p>
+          </div>
+
+          {/* Spec Grid */}
+          <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            
+            {[
+              {
+                value: "1kW – 25kW",
+                label: "Wide Capacity Range",
+                desc: "Scalable systems for residential & commercial needs."
+              },
+              {
+                value: "97%",
+                label: "Peak Efficiency",
+                desc: "Industry-leading conversion efficiency for maximum output."
+              },
+              {
+                value: "MC4",
+                label: "Standard Connectors",
+                desc: "Universal MC4 connectors for easy installation."
+              },
+              {
+                value: "IoT Enabled",
+                label: "Remote Monitoring",
+                desc: "Real-time system monitoring and control from anywhere."
+              }
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="group bg-white p-10 rounded-2xl
+                          border border-gray-100
+                          shadow-[0_10px_25px_rgba(0,0,0,0.04)]
+                          transition duration-300
+                          hover:-translate-y-2
+                          hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]"
+              >
+                <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                  {item.value}
+                </div>
+                
+                <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                  {item.label}
+                </div>
+                
+                <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+                
+                {/* Accent line */}
+                <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
+              </div>
+            ))}
+
           </div>
         </div>
       </section>
 
-      {/* 3. PHASE OPTIONS */}
+      {/* 3. PHASE OPTIONS - With Product Images */}
       <section className="py-24 md:py-32" style={{ backgroundColor: '#f4f4f3' }}>
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
           <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[#0B0D10]">
@@ -82,30 +126,56 @@ export default function OnGridSolarInverter() {
           
           <div className="grid md:grid-cols-2 gap-8">
             
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-3xl font-bold mb-6 text-[#0B0D10]">Single Phase</h3>
-              <p className="text-lg text-[#475063] mb-6">For residential and small commercial</p>
-              <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">1kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">2kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">3kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">4kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">5kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">6kW</span>
+            {/* Single Phase Card */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              {/* Product Image */}
+              <div className="bg-gradient-to-br from-zinc-50 to-zinc-100 p-8 flex items-center justify-center min-h-[280px]">
+                <img 
+                  src="/products/single-and-three-phase-on-grid-solar-inverter.png" 
+                  alt="Single Phase On-Grid Inverter" 
+                  className="w-full max-w-xs object-contain"
+                />
+              </div>
+              
+              {/* Content */}
+              <div className="p-8">
+                <h3 className="text-3xl font-bold mb-3 text-[#0B0D10]">Single Phase</h3>
+                <p className="text-lg text-[#475063] mb-6">For residential and small commercial</p>
+                <div className="flex flex-wrap gap-3">
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">1kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">2kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">3kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">4kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">5kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">6kW</span>
+                </div>
               </div>
             </div>
 
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-3xl font-bold mb-6 text-[#0B0D10]">Three Phase</h3>
-              <p className="text-lg text-[#475063] mb-6">For commercial and industrial</p>
-              <div className="flex flex-wrap gap-3">
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">5kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">6kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">8kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">10kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">15kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">20kW</span>
-                <span className="px-4 py-2 bg-white border border-zinc-200 text-green-600 font-semibold">25kW</span>
+            {/* Three Phase Card */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              {/* Product Image */}
+              <div className="bg-gradient-to-br from-zinc-50 to-zinc-100 p-8 flex items-center justify-center min-h-[280px]">
+                <img 
+                  src="/products/single-and-three-phase-on-grid-solar-inverter.png" 
+                  alt="Three Phase On-Grid Inverter" 
+                  className="w-full max-w-xs object-contain"
+                />
+              </div>
+              
+              {/* Content */}
+              <div className="p-8">
+                <h3 className="text-3xl font-bold mb-3 text-[#0B0D10]">Three Phase</h3>
+                <p className="text-lg text-[#475063] mb-6">For commercial and industrial</p>
+                <div className="flex flex-wrap gap-3">
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">5kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">6kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">8kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">10kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">15kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">20kW</span>
+                  <span className="px-4 py-2 bg-zinc-50 border border-zinc-200 text-green-600 font-semibold rounded-lg hover:bg-green-50 hover:border-green-300 transition-colors cursor-pointer">25kW</span>
+                </div>
               </div>
             </div>
 
@@ -113,58 +183,146 @@ export default function OnGridSolarInverter() {
         </div>
       </section>
 
-      {/* 4. KEY FEATURES */}
-      <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[#0B0D10]">
-            Smart features
-          </h2>
+      {/* 4. PRODUCT SHOWCASE - Premium Framed Panel Style */}
+      <section className="relative py-20 lg:py-44 overflow-hidden text-white">
+        {/* Dark Spotlight Background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#1F3A67_0%,#0C1629_70%)]"></div>
+        
+        {/* Subtle Center Light Layer */}
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_60%)]"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-6">
           
-          <div className="grid md:grid-cols-2 gap-8">
+          {/* Desktop: Centered Product with Side Callouts */}
+          <div className="hidden lg:flex items-center justify-center relative min-h-[600px]">
             
-            <div className="bg-white p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Smart Display</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Real-time system monitoring with intuitive display interface
-              </p>
+            {/* Ambient Glow Behind Frame */}
+            <div className="absolute w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(30,80,160,0.25)_0%,transparent_70%)] blur-3xl"></div>
+            
+            {/* Premium Framed Product Panel */}
+            <div className="relative z-10 bg-gradient-to-b from-[#162B4F] to-[#101D34] p-16 rounded-3xl shadow-[0_80px_140px_rgba(0,0,0,0.85)] border border-white/10 hover:scale-[1.01] transition duration-500 ease-out">
+              <div className="bg-[#F4F6F8] p-8 rounded-2xl shadow-inner">
+                <img 
+                  src="/products/single-and-three-phase-on-grid-solar-inverter.png" 
+                  alt="On-Grid Solar Inverter" 
+                  className="w-[340px] mx-auto"
+                />
+              </div>
             </div>
-
-            <div className="bg-white p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Compact Design</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Space-efficient design for easy installation in any location
-              </p>
+            
+            {/* LEFT FEATURES */}
+            <div className="absolute left-0 space-y-20 z-20 -translate-x-32">
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">Smart Display</h4>
+                  <p className="text-sm text-white/50 mt-1">Real-time monitoring</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">Plug-n-Play</h4>
+                  <p className="text-sm text-white/50 mt-1">Quick installation</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">Safety Features</h4>
+                  <p className="text-sm text-white/50 mt-1">Advanced protection</p>
+                </div>
+              </div>
+              
             </div>
-
-            <div className="bg-white p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Plug-n-Play</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Quick installation with plug-and-play connectors
-              </p>
+            
+            {/* RIGHT FEATURES */}
+            <div className="absolute right-0 space-y-20 z-20 translate-x-32">
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">Compact Design</h4>
+                  <p className="text-sm text-white/50 mt-1">Space-efficient</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">High Efficiency</h4>
+                  <p className="text-sm text-white/50 mt-1">97% conversion</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">Remote Monitoring</h4>
+                  <p className="text-sm text-white/50 mt-1">IoT-enabled control</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
             </div>
-
-            <div className="bg-white p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">High Efficiency</h3>
-              <p className="text-[#475063] leading-relaxed">
-                97% output efficiency maximizes solar energy conversion
-              </p>
-            </div>
-
-            <div className="bg-white p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Safety Features</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Residual current detection and integrated DC switch for protection
-              </p>
-            </div>
-
-            <div className="bg-white p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Remote Monitoring</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Monitor and control your system from anywhere
-              </p>
-            </div>
-
+            
           </div>
+          
+          {/* Mobile: Vertical Stack Layout */}
+          <div className="lg:hidden">
+            
+            {/* Product Frame */}
+            <div className="flex justify-center mb-12">
+              <div className="w-[90%] sm:w-[80%] md:w-[70%] bg-gradient-to-b from-[#162B4F] to-[#101D34] p-8 sm:p-10 md:p-12 rounded-3xl shadow-[0_80px_140px_rgba(0,0,0,0.85)] border border-white/10">
+                <div className="bg-[#F4F6F8] p-6 sm:p-8 rounded-2xl shadow-inner">
+                  <img 
+                    src="/products/single-and-three-phase-on-grid-solar-inverter.png" 
+                    alt="On-Grid Solar Inverter" 
+                    className="w-full max-w-[280px] mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Features List */}
+            <div className="mt-12 space-y-8 px-6 text-center max-w-md mx-auto">
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Smart Display</h4>
+                <p className="text-white/60 text-sm mt-1">Real-time system monitoring</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Compact Design</h4>
+                <p className="text-white/60 text-sm mt-1">Space-efficient installation</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Plug-n-Play</h4>
+                <p className="text-white/60 text-sm mt-1">Quick installation</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">High Efficiency</h4>
+                <p className="text-white/60 text-sm mt-1">97% output efficiency</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Safety Features</h4>
+                <p className="text-white/60 text-sm mt-1">Advanced protection systems</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Remote Monitoring</h4>
+                <p className="text-white/60 text-sm mt-1">Monitor from anywhere</p>
+              </div>
+              
+            </div>
+            
+          </div>
+          
         </div>
       </section>
 

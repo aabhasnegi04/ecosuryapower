@@ -48,85 +48,223 @@ export default function SparkleHybridSolarInverters() {
         </div>
       </section>
 
-      {/* 2. SPECS */}
-      <section className="py-32 md:py-40 bg-zinc-50">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-16 md:gap-20">
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-green-600 leading-tight">3.6kW</div>
-              <div className="text-2xl text-zinc-400 my-1">|</div>
-              <div className="text-5xl md:text-6xl font-bold text-green-600 leading-tight mb-4">6.5kW</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">Capacity</div>
+      {/* 2. TECHNICAL FEATURE GRID - Premium Spec Showcase */}
+      <section className="relative py-32 bg-gradient-to-b from-[#f8fafc] to-white">
+        <div className="max-w-7xl mx-auto px-6">
+          
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0B0D10]">
+              Smart Hybrid Power for Modern Homes
+            </h2>
+            <p className="mt-5 text-lg text-gray-600">
+              Intelligent solar control with seamless on-grid and off-grid operation.
+            </p>
+          </div>
+
+          {/* Spec Grid */}
+          <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            
+            {/* Spec Card 1 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                3.6kW – 6.5kW
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                Capacity Range
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Perfect for residential and small commercial use.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-green-600 leading-none mb-4">100A</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">Solar Charger</div>
+
+            {/* Spec Card 2 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                100A
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                Solar Charger
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Built-in high-capacity solar charging controller.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-green-600 leading-tight">On</div>
-              <div className="text-3xl md:text-4xl font-bold text-green-600 mb-4">Off Grid</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">Hybrid</div>
+
+            {/* Spec Card 3 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                On/Off Grid
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                True Hybrid
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Works seamlessly with or without grid connection.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-green-600 leading-none mb-4">IoT</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">Remote</div>
+
+            {/* Spec Card 4 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                IoT
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                Remote Monitoring
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Cloud-based monitoring and control capabilities.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* 3. KEY FEATURES */}
-      <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[#0B0D10]">
-            Smart features
-          </h2>
+      {/* 3. PRODUCT SHOWCASE - Premium Framed Panel Style */}
+      <section className="relative py-20 lg:py-44 overflow-hidden text-white">
+        {/* Dark Spotlight Background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#1F3A67_0%,#0C1629_70%)]"></div>
+        
+        {/* Subtle Center Light Layer */}
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_60%)]"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-6">
           
-          <div className="grid md:grid-cols-2 gap-8">
+          {/* Desktop: Centered Product with Side Callouts */}
+          <div className="hidden lg:flex items-center justify-center relative min-h-[600px]">
             
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Built-in 100A Solar Charger</h3>
-              <p className="text-[#475063] leading-relaxed">
-                High-capacity integrated solar charging for faster battery charging
-              </p>
+            {/* Ambient Glow Behind Frame */}
+            <div className="absolute w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(30,80,160,0.25)_0%,transparent_70%)] blur-3xl"></div>
+            
+            {/* Premium Framed Product Panel */}
+            <div className="relative z-10 bg-gradient-to-b from-[#162B4F] to-[#101D34] p-16 rounded-3xl shadow-[0_80px_140px_rgba(0,0,0,0.85)] border border-white/10 hover:scale-[1.01] transition duration-500 ease-out">
+              <div className="bg-[#F4F6F8] p-8 rounded-2xl shadow-inner">
+                <img 
+                  src="/products/sparkle-hybrid-solar-inverters.png" 
+                  alt="Sparkle Hybrid Solar Inverter" 
+                  className="w-[340px] mx-auto"
+                />
+              </div>
             </div>
-
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Noise Control Algorithm</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Intelligent noise reduction for quiet operation in residential settings
-              </p>
+            
+            {/* LEFT FEATURES */}
+            <div className="absolute left-0 space-y-20 z-20 -translate-x-32">
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">Built-in 100A Solar Charger</h4>
+                  <p className="text-sm text-white/50 mt-1">High-capacity integrated charging</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">Noise Control Algorithm</h4>
+                  <p className="text-sm text-white/50 mt-1">Quiet operation</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">On-Grid & Off-Grid</h4>
+                  <p className="text-sm text-white/50 mt-1">True hybrid operation</p>
+                </div>
+              </div>
+              
             </div>
-
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">On-Grid & Off-Grid</h3>
-              <p className="text-[#475063] leading-relaxed">
-                True hybrid operation - works seamlessly with or without grid connection
-              </p>
+            
+            {/* RIGHT FEATURES */}
+            <div className="absolute right-0 space-y-20 z-20 translate-x-32">
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">Wall-Mounted Design</h4>
+                  <p className="text-sm text-white/50 mt-1">Compact installation</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">High-Speed DSP</h4>
+                  <p className="text-sm text-white/50 mt-1">Fast digital processing</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">Battery Flexible</h4>
+                  <p className="text-sm text-white/50 mt-1">Lithium & lead-acid compatible</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
             </div>
-
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Wall-Mounted Design</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Lightweight and compact for easy installation in any space
-              </p>
-            </div>
-
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">High-Speed DSP</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Digital processing chip ensures stable performance and fast response
-              </p>
-            </div>
-
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Battery Flexible</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Compatible with both lithium-ion and lead-acid battery types
-              </p>
-            </div>
-
+            
           </div>
+          
+          {/* Mobile: Vertical Stack Layout */}
+          <div className="lg:hidden">
+            
+            {/* Product Frame */}
+            <div className="flex justify-center mb-12">
+              <div className="w-[90%] sm:w-[80%] md:w-[70%] bg-gradient-to-b from-[#162B4F] to-[#101D34] p-8 sm:p-10 md:p-12 rounded-3xl shadow-[0_80px_140px_rgba(0,0,0,0.85)] border border-white/10">
+                <div className="bg-[#F4F6F8] p-6 sm:p-8 rounded-2xl shadow-inner">
+                  <img 
+                    src="/products/sparkle-hybrid-solar-inverters.png" 
+                    alt="Sparkle Hybrid Solar Inverter" 
+                    className="w-full max-w-[280px] mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Features List */}
+            <div className="mt-12 space-y-8 px-6 text-center max-w-md mx-auto">
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Built-in 100A Solar Charger</h4>
+                <p className="text-white/60 text-sm mt-1">High-capacity integrated charging</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Wall-Mounted Design</h4>
+                <p className="text-white/60 text-sm mt-1">Compact installation</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">High-Speed DSP</h4>
+                <p className="text-white/60 text-sm mt-1">Fast digital processing</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Battery Flexible</h4>
+                <p className="text-white/60 text-sm mt-1">Lithium & lead-acid compatible</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Noise Control Algorithm</h4>
+                <p className="text-white/60 text-sm mt-1">Quiet operation</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">On-Grid & Off-Grid</h4>
+                <p className="text-white/60 text-sm mt-1">True hybrid operation</p>
+              </div>
+              
+            </div>
+            
+          </div>
+          
         </div>
       </section>
 

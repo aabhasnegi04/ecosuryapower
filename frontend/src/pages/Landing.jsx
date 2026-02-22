@@ -3,6 +3,7 @@ import Hero from '../components/Hero'
 import ProblemSolution from '../components/ProblemSolution'
 import SolutionsOverview from '../components/SolutionsOverview'
 import HowItWorks from '../components/HowItWorks'
+import BuiltForIndia from '../components/BuiltForIndia'
 import WhyAcube from '../components/WhyAcube'
 import ContactForm from '../components/ContactForm'
 import ContactReassurance from '../components/ContactReassurance'
@@ -21,6 +22,7 @@ export default function Landing() {
       <FadeInSection>
         <HowItWorks />
       </FadeInSection>
+      <BuiltForIndia />
       <FadeInSection>
         <WhyAcube />
       </FadeInSection>

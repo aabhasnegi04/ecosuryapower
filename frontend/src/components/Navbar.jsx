@@ -198,11 +198,11 @@ export default function Navbar() {
       icon: "⚡"
     },
     {
-      name: "Energy Storage",
-      description: "Store solar energy and use it anytime for complete independence.",
-      image: "/Energy Storage.jpg",
-      link: "/solutions/energy-storage",
-      icon: "🔋"
+      name: "Solar Panel Cleaning",
+      description: "Professional cleaning service to restore peak panel performance.",
+      image: "/man-worker-firld-by-solar-panels.jpg",
+      link: "/solutions/solar-panel-cleaning",
+      icon: "✨"
     }
   ]
 

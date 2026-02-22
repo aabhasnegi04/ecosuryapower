@@ -48,34 +48,76 @@ export default function OffGridPWMSolarInverter() {
         </div>
       </section>
 
-      {/* 2. SPECS */}
-      <section className="py-12 sm:py-20 md:py-32 lg:py-40 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 md:gap-16 lg:gap-20">
-            <div className="text-center">
-              <div className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-green-600 leading-tight">1kVA</div>
-              <div className="text-lg sm:text-xl md:text-2xl text-zinc-400 my-0.5 sm:my-1">—</div>
-              <div className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-green-600 leading-tight mb-2 sm:mb-3 md:mb-4">5kVA</div>
-              <div className="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-zinc-500">Range</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-green-600 leading-none mb-2 sm:mb-3 md:mb-4">PWM</div>
-              <div className="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-zinc-500">True CV</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-green-600 leading-tight">5</div>
-              <div className="text-base sm:text-xl md:text-3xl lg:text-4xl font-bold text-green-600 mb-2 sm:mb-3 md:mb-4">Stage</div>
-              <div className="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-zinc-500">Charging</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-green-600 leading-none mb-2 sm:mb-3 md:mb-4">DSP</div>
-              <div className="text-[9px] sm:text-[10px] md:text-xs uppercase tracking-widest text-zinc-500">Technology</div>
-            </div>
+      {/* 2. SPECS - Technical Feature Grid */}
+      <section className="relative py-32 bg-gradient-to-b from-[#f8fafc] to-white">
+        <div className="max-w-7xl mx-auto px-6">
+          
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+              Engineered for Off-Grid Reliability
+            </h2>
+            <p className="mt-5 text-lg text-gray-600">
+              Built with proven PWM technology for dependable off-grid power in any location.
+            </p>
+          </div>
+
+          {/* Spec Grid */}
+          <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            
+            {[
+              {
+                value: "1kVA – 5kVA",
+                label: "Capacity Range",
+                desc: "Scalable systems for homes and small businesses."
+              },
+              {
+                value: "True PWM",
+                label: "Constant Voltage",
+                desc: "Reliable PWM charging for optimal battery health."
+              },
+              {
+                value: "5-Stage",
+                label: "Smart Charging",
+                desc: "Advanced 5-stage charging algorithm for battery longevity."
+              },
+              {
+                value: "DSP Control",
+                label: "Digital Processing",
+                desc: "Advanced DSP technology for superior performance."
+              }
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="group bg-white p-10 rounded-2xl
+                          border border-gray-100
+                          shadow-[0_10px_25px_rgba(0,0,0,0.04)]
+                          transition duration-300
+                          hover:-translate-y-2
+                          hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]"
+              >
+                <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                  {item.value}
+                </div>
+                
+                <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                  {item.label}
+                </div>
+                
+                <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                  {item.desc}
+                </p>
+                
+                {/* Accent line */}
+                <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
+              </div>
+            ))}
+
           </div>
         </div>
       </section>
 
-      {/* 3. VARIANTS */}
+      {/* 3. VARIANTS - With Product Images */}
       <section className="py-12 sm:py-16 md:py-24 lg:py-32" style={{ backgroundColor: '#e6e6e6' }}>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 sm:mb-10 md:mb-16 text-center text-[#0B0D10]">
@@ -84,34 +126,178 @@ export default function OffGridPWMSolarInverter() {
           
           <div className="grid sm:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
             
-            <div className="bg-white border border-zinc-200 p-5 sm:p-6 md:p-8 hover:border-green-600 transition-all duration-300 rounded-xl">
-              <h3 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-[#0B0D10]">PLUS</h3>
-              <p className="text-base sm:text-lg text-[#475063] mb-4 sm:mb-6">
-                Essential off-grid power
-              </p>
-              <div className="space-y-2 sm:space-y-3 text-sm sm:text-base text-[#475063]">
-                <p>✓ True CV PWM charging</p>
-                <p>✓ LCD display</p>
-                <p>✓ 5-stage battery charging</p>
+            {/* PLUS Variant Card */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+              {/* Product Image */}
+              <div className="bg-gradient-to-br from-zinc-50 to-zinc-100 p-8 flex items-center justify-center min-h-[280px]">
+                <img 
+                  src="/products/off-grid-pwm-solar-inverter.png" 
+                  alt="Off-Grid PWM Solar Inverter PLUS" 
+                  className="w-full max-w-xs object-contain"
+                />
+              </div>
+              
+              {/* Content */}
+              <div className="p-8">
+                <h3 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-[#0B0D10]">PLUS</h3>
+                <p className="text-base sm:text-lg text-[#475063] mb-4 sm:mb-6">
+                  Essential off-grid power
+                </p>
+                <div className="space-y-2 sm:space-y-3 text-sm sm:text-base text-[#475063]">
+                  <p>✓ True CV PWM charging</p>
+                  <p>✓ LCD display</p>
+                  <p>✓ 5-stage battery charging</p>
+                </div>
               </div>
             </div>
 
-            <div className="bg-white border-2 border-green-600 p-5 sm:p-6 md:p-8 relative rounded-xl">
-              <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-green-600 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 uppercase rounded">
+            {/* UNIK Variant Card */}
+            <div className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 border-2 border-green-600 relative">
+              <div className="absolute top-3 sm:top-4 right-3 sm:right-4 bg-green-600 text-white text-[10px] sm:text-xs font-bold px-2 sm:px-3 py-1 uppercase rounded z-10">
                 Advanced
               </div>
-              <h3 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-[#0B0D10]">UNIK</h3>
-              <p className="text-base sm:text-lg text-[#475063] mb-4 sm:mb-6">
-                Premium with AI charge sharing
-              </p>
-              <div className="space-y-2 sm:space-y-3 text-sm sm:text-base text-[#475063]">
-                <p>✓ AI charge sharing</p>
-                <p>✓ Advanced DSP control</p>
-                <p>✓ Enhanced LCD display</p>
-                <p>✓ 5-stage intelligent charging</p>
+              
+              {/* Product Image */}
+              <div className="bg-gradient-to-br from-zinc-50 to-zinc-100 p-8 flex items-center justify-center min-h-[280px]">
+                <img 
+                  src="/products/off-grid-pwm-solar-inverter.png" 
+                  alt="Off-Grid PWM Solar Inverter UNIK" 
+                  className="w-full max-w-xs object-contain"
+                />
+              </div>
+              
+              {/* Content */}
+              <div className="p-8">
+                <h3 className="text-2xl sm:text-2xl md:text-3xl font-bold mb-3 sm:mb-4 text-[#0B0D10]">UNIK</h3>
+                <p className="text-base sm:text-lg text-[#475063] mb-4 sm:mb-6">
+                  Premium with AI charge sharing
+                </p>
+                <div className="space-y-2 sm:space-y-3 text-sm sm:text-base text-[#475063]">
+                  <p>✓ AI charge sharing</p>
+                  <p>✓ Advanced DSP control</p>
+                  <p>✓ Enhanced LCD display</p>
+                  <p>✓ 5-stage intelligent charging</p>
+                </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* 3.5. PRODUCT SHOWCASE - Premium Framed Panel Style */}
+      <section className="relative py-20 lg:py-44 overflow-hidden text-white">
+        {/* Dark Spotlight Background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#1F3A67_0%,#0C1629_70%)]"></div>
+        
+        {/* Subtle Center Light Layer */}
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_60%)]"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-6">
+          
+          {/* Desktop: Centered Product with Side Callouts */}
+          <div className="hidden lg:flex items-center justify-center relative min-h-[600px]">
+            
+            {/* Ambient Glow Behind Frame */}
+            <div className="absolute w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(30,80,160,0.25)_0%,transparent_70%)] blur-3xl"></div>
+            
+            {/* Premium Framed Product Panel */}
+            <div className="relative z-10 bg-gradient-to-b from-[#162B4F] to-[#101D34] p-16 rounded-3xl shadow-[0_80px_140px_rgba(0,0,0,0.85)] border border-white/10 hover:scale-[1.01] transition duration-500 ease-out">
+              <div className="bg-[#F4F6F8] p-8 rounded-2xl shadow-inner">
+                <img 
+                  src="/products/off-grid-pwm-solar-inverter.png" 
+                  alt="Off-Grid PWM Solar Inverter" 
+                  className="w-[340px] mx-auto"
+                />
+              </div>
+            </div>
+            
+            {/* LEFT FEATURES */}
+            <div className="absolute left-0 space-y-20 z-20 -translate-x-32">
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">True PWM</h4>
+                  <p className="text-sm text-white/50 mt-1">Constant voltage charging</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">5-Stage Charging</h4>
+                  <p className="text-sm text-white/50 mt-1">Optimal battery health</p>
+                </div>
+              </div>
+              
+            </div>
+            
+            {/* RIGHT FEATURES */}
+            <div className="absolute right-0 space-y-20 z-20 translate-x-32">
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">LCD Display</h4>
+                  <p className="text-sm text-white/50 mt-1">Real-time monitoring</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">DSP Technology</h4>
+                  <p className="text-sm text-white/50 mt-1">Advanced control</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
+            </div>
+            
+          </div>
+          
+          {/* Mobile: Vertical Stack Layout */}
+          <div className="lg:hidden">
+            
+            {/* Product Frame */}
+            <div className="flex justify-center mb-12">
+              <div className="w-[90%] sm:w-[80%] md:w-[70%] bg-gradient-to-b from-[#162B4F] to-[#101D34] p-8 sm:p-10 md:p-12 rounded-3xl shadow-[0_80px_140px_rgba(0,0,0,0.85)] border border-white/10">
+                <div className="bg-[#F4F6F8] p-6 sm:p-8 rounded-2xl shadow-inner">
+                  <img 
+                    src="/products/off-grid-pwm-solar-inverter.png" 
+                    alt="Off-Grid PWM Solar Inverter" 
+                    className="w-full max-w-[280px] mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Features List */}
+            <div className="mt-12 space-y-8 px-6 text-center max-w-md mx-auto">
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">True PWM</h4>
+                <p className="text-white/60 text-sm mt-1">Constant voltage charging</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">LCD Display</h4>
+                <p className="text-white/60 text-sm mt-1">Real-time system monitoring</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">5-Stage Charging</h4>
+                <p className="text-white/60 text-sm mt-1">Optimal battery longevity</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">DSP Technology</h4>
+                <p className="text-white/60 text-sm mt-1">Advanced digital control</p>
+              </div>
+              
+            </div>
+            
+          </div>
+          
         </div>
       </section>
 

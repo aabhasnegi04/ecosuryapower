@@ -366,73 +366,82 @@ export default function Residential() {
           </div>
         </section>
 
-        {/* 3. PROCESS TIMELINE - White with Modern Stepper */}
-        <section className="py-40 md:py-48 bg-white">
-          <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-24 text-center text-[#0B0D10] observe">
+        {/* 3. PROCESS TIMELINE - Modern Image-Based Journey */}
+        <section className="py-32 md:py-40 bg-white">
+          <div className="max-w-7xl mx-auto px-6 md:px-8">
+            <h2 className="text-4xl md:text-5xl font-bold mb-16 md:mb-20 text-center text-[#0B0D10] observe">
               Your commercial solar<br />journey.
             </h2>
             
-            {/* Desktop Timeline */}
-            <div className="hidden md:block observe">
-              <div className="relative">
-                {/* Animated Line */}
-                <div 
-                  className="absolute top-16 left-0 right-0 h-1 bg-gradient-to-r from-green-600 via-green-500 to-green-400"
-                  style={{ opacity: 0.2 }}
-                ></div>
+            {/* Desktop: Cards with Connecting Line */}
+            <div className="relative">
+              {/* Subtle Connecting Line - Desktop Only */}
+              <div className="hidden md:block absolute top-20 left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-green-200 via-green-300 to-green-200 opacity-40"></div>
+              
+              <div className="grid md:grid-cols-5 gap-8 md:gap-12">
                 
-                <div className="grid grid-cols-5 gap-8 relative">
-                  
-                  {[
-                    { num: '01', title: 'Energy Audit', desc: 'Site assessment' },
-                    { num: '02', title: 'ROI Planning', desc: 'System design' },
-                    { num: '03', title: 'Approvals', desc: 'Net metering' },
-                    { num: '04', title: 'Installation', desc: 'Commissioning' },
-                    { num: '05', title: 'AMC Support', desc: 'Monitoring' }
-                  ].map((step, index) => (
-                    <div key={index} className="text-center">
-                      <div 
-                        className="step-circle w-32 h-32 mx-auto bg-white border-4 border-green-600 rounded-full flex items-center justify-center mb-8 relative z-10"
-                        style={{ boxShadow: '0 10px 30px rgba(22,163,74,0.2)' }}
-                      >
-                        <span className="text-3xl font-bold text-green-600">{step.num}</span>
-                      </div>
-                      <h3 className="text-xl font-bold mb-3 text-[#0B0D10]">{step.title}</h3>
-                      <p className="text-base text-[#6B7280]">{step.desc}</p>
+                {[
+                  { 
+                    step: '01', 
+                    title: 'Energy Audit', 
+                    desc: 'Site assessment',
+                    image: '/Factory rooftop with panels.jpg'
+                  },
+                  { 
+                    step: '02', 
+                    title: 'ROI Planning', 
+                    desc: 'System design',
+                    image: '/beautiful-alternative-energy-plant-with-solar-panels.jpg'
+                  },
+                  { 
+                    step: '03', 
+                    title: 'Approvals', 
+                    desc: 'Net metering',
+                    image: '/reliability.jpg'
+                  },
+                  { 
+                    step: '04', 
+                    title: 'Installation', 
+                    desc: 'Commissioning',
+                    image: '/ResidentialSolar.jpg'
+                  },
+                  { 
+                    step: '05', 
+                    title: 'AMC Support', 
+                    desc: 'Monitoring',
+                    image: '/Hybrid Systems.jpg'
+                  }
+                ].map((item, index) => (
+                  <div 
+                    key={index}
+                    className="relative group observe"
+                  >
+                    {/* Step Badge */}
+                    <div className="absolute -top-3 -left-3 bg-green-600 text-white text-sm font-bold px-3 py-1.5 rounded-full shadow-lg z-20">
+                      {item.step}
                     </div>
-                  ))}
-                  
-                </div>
+
+                    {/* Image Card */}
+                    <div className="rounded-2xl overflow-hidden mb-5 shadow-md group-hover:shadow-xl transition-all duration-500 relative z-10">
+                      <img 
+                        src={item.image}
+                        alt={item.title}
+                        className="w-full h-40 object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                    </div>
+
+                    {/* Content */}
+                    <h3 className="text-lg md:text-xl font-bold text-[#0B0D10] mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-[#6B7280]">
+                      {item.desc}
+                    </p>
+                  </div>
+                ))}
+
               </div>
             </div>
-
-            {/* Mobile Stepper */}
-            <div className="md:hidden space-y-10 observe">
-              {[
-                { num: '01', title: 'Energy Audit', desc: 'Site assessment' },
-                { num: '02', title: 'ROI Planning', desc: 'System design' },
-                { num: '03', title: 'Approvals', desc: 'Net metering' },
-                { num: '04', title: 'Installation', desc: 'Commissioning' },
-                { num: '05', title: 'AMC Support', desc: 'Monitoring' }
-              ].map((step, index) => (
-                <div key={index} className="flex gap-8">
-                  <div className="flex-shrink-0">
-                    <div 
-                      className="w-20 h-20 bg-white border-4 border-green-600 rounded-full flex items-center justify-center"
-                      style={{ boxShadow: '0 10px 30px rgba(22,163,74,0.2)' }}
-                    >
-                      <span className="text-2xl font-bold text-green-600">{step.num}</span>
-                    </div>
-                  </div>
-                  <div className="pt-4">
-                    <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">{step.title}</h3>
-                    <p className="text-lg text-[#6B7280]">{step.desc}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
           </div>
         </section>
 
@@ -557,7 +566,75 @@ export default function Residential() {
           </div>
         </section>
 
-        {/* 5. RECOMMENDED SYSTEMS - Light Gradient */}
+        {/* 5. BUILT FOR INDIA - Split Sections */}
+        
+        {/* Section A - Text Left, Image Right */}
+        <section className="relative bg-white">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 min-h-[600px]">
+              
+              {/* Text */}
+              <div className="flex items-center px-8 md:px-16 py-20 md:py-32">
+                <div className="observe">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-[#0B0D10] leading-tight">
+                    Built for<br />Indian Rooftops.
+                  </h2>
+                  <p className="text-xl md:text-2xl text-[#6B7280] leading-relaxed mb-6">
+                    Extreme heat. Monsoon storms. Dust. Humidity.
+                  </p>
+                  <p className="text-lg md:text-xl text-[#6B7280] leading-relaxed">
+                    Our systems are engineered to withstand the harshest conditions India throws at them — and keep performing for 25+ years.
+                  </p>
+                </div>
+              </div>
+
+              {/* Image */}
+              <div className="relative min-h-[400px] md:min-h-full">
+                <img 
+                  src="/about/indian-rooftop.jpg" 
+                  alt="Indian Rooftop Solar" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* Section B - Image Left, Text Right */}
+        <section className="relative bg-zinc-50">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid md:grid-cols-2 min-h-[600px]">
+              
+              {/* Image */}
+              <div className="relative min-h-[400px] md:min-h-full order-2 md:order-1">
+                <img 
+                  src="/about/Installer Team Working.jpg" 
+                  alt="Installation Team" 
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+              </div>
+
+              {/* Text */}
+              <div className="flex items-center px-8 md:px-16 py-20 md:py-32 order-1 md:order-2">
+                <div className="observe">
+                  <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 text-[#0B0D10] leading-tight">
+                    Expert<br />Installation.
+                  </h2>
+                  <p className="text-xl md:text-2xl text-[#6B7280] leading-relaxed mb-6">
+                    Precision engineering meets skilled craftsmanship.
+                  </p>
+                  <p className="text-lg md:text-xl text-[#6B7280] leading-relaxed">
+                    Every installation is executed by certified professionals who understand structural integrity, electrical safety, and long-term performance.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        {/* 6. RECOMMENDED SYSTEMS - Light Gradient */}
         <section 
           id="recommended" 
           className="py-40 md:py-48"
@@ -656,78 +733,82 @@ export default function Residential() {
           </div>
         </section>
 
-        {/* 6. IMPACT NUMBERS - Dark Background */}
-        <section className="py-40 md:py-56" style={{ background: '#0f172a' }}>
-          <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-20 lg:gap-24">
+        {/* 7. IMPACT NUMBERS - Dark Background - Balanced Layout */}
+        <section className="py-32 md:py-40" style={{ background: '#0B1C3D' }}>
+          <div className="max-w-7xl mx-auto px-6 md:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:gap-12 md:divide-x md:divide-white/10">
               
               <div className="text-center observe">
-                <div className="text-5xl md:text-6xl lg:text-7xl font-bold mb-5 text-green-500 stat-number">₹0</div>
-                <div className="text-xs md:text-sm uppercase tracking-[0.15em] text-zinc-400 opacity-70">Upfront Financing</div>
+                <div className="text-4xl md:text-5xl font-bold mb-4 text-[#00D26A] tracking-tight whitespace-nowrap">₹0</div>
+                <div className="text-sm tracking-[0.2em] text-gray-400 uppercase">Upfront Financing</div>
               </div>
 
               <div className="text-center observe">
-                <div className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 text-green-500 stat-number">4-6 Years</div>
-                <div className="text-xs md:text-sm uppercase tracking-[0.15em] text-zinc-400 opacity-70">Typical Payback</div>
+                <div className="text-4xl md:text-5xl font-bold mb-4 text-[#00D26A] tracking-tight whitespace-nowrap">4-6 Years</div>
+                <div className="text-sm tracking-[0.2em] text-gray-400 uppercase">Typical Payback</div>
               </div>
 
               <div className="text-center observe">
-                <div className="text-5xl md:text-6xl lg:text-7xl font-bold mb-5 text-green-500 stat-number">25+</div>
-                <div className="text-xs md:text-sm uppercase tracking-[0.15em] text-zinc-400 opacity-70">Years System Life</div>
+                <div className="text-4xl md:text-5xl font-bold mb-4 text-[#00D26A] tracking-tight whitespace-nowrap">25+</div>
+                <div className="text-sm tracking-[0.2em] text-gray-400 uppercase">Years System Life</div>
               </div>
 
               <div className="text-center observe">
-                <div className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 text-green-500 stat-number">Pan-India</div>
-                <div className="text-xs md:text-sm uppercase tracking-[0.15em] text-zinc-400 opacity-70">Installation</div>
+                <div className="text-4xl md:text-5xl font-bold mb-4 text-[#00D26A] tracking-tight whitespace-nowrap">Pan-India</div>
+                <div className="text-sm tracking-[0.2em] text-gray-400 uppercase">Installation</div>
               </div>
 
             </div>
           </div>
         </section>
 
-        {/* 7. CINEMATIC IMAGE SECTION */}
+        {/* 8. PREMIUM SOLAR CTA SECTION */}
         <section 
-          className="parallax-section relative py-48 md:py-56 overflow-hidden"
+          className="parallax-section relative py-32 md:py-40 overflow-hidden"
           style={{
-            backgroundImage: 'url(/Factory rooftop with panels.jpg)',
+            backgroundImage: 'url(/beautiful-alternative-energy-plant-with-solar-panels.jpg)',
             backgroundAttachment: 'fixed',
             backgroundPosition: 'center',
             backgroundSize: 'cover'
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+          {/* Dark overlay for readability - lighter to show image */}
+          <div className="absolute inset-0 bg-black/40"></div>
           
-          <div className="relative z-10 max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
+          {/* Subtle green accent glow */}
+          <div className="absolute inset-0 bg-gradient-to-r from-green-900/15 to-transparent"></div>
+          
+          <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
             <div className="max-w-3xl">
-              <h2 className="text-5xl md:text-6xl font-bold mb-8 text-white observe leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white observe leading-tight">
                 Engineered for Indian<br />industrial conditions.
               </h2>
-              <p className="text-2xl text-zinc-200 mb-12 observe">
+              <p className="text-lg md:text-xl text-gray-200 mb-10 observe">
                 Designed to perform in extreme heat, dust, and high-load environments.
               </p>
               <a 
                 href="/contact" 
-                className="inline-block bg-white text-black px-12 py-6 text-lg font-semibold hover:bg-zinc-100 transition-all duration-300 observe"
+                className="inline-block w-full sm:w-auto bg-green-600 text-white px-8 py-4 text-lg font-semibold hover:bg-green-700 transition-all duration-300 observe text-center"
                 style={{ 
-                  borderRadius: '14px',
-                  boxShadow: '0 15px 40px rgba(255,255,255,0.2)'
+                  borderRadius: '12px',
+                  boxShadow: '0 0 40px rgba(0,200,100,0.3), 0 20px 60px rgba(22,163,74,0.4)'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.transform = 'translateY(-4px)';
-                  e.currentTarget.style.boxShadow = '0 20px 50px rgba(255,255,255,0.3)';
+                  e.currentTarget.style.boxShadow = '0 0 50px rgba(0,200,100,0.4), 0 25px 70px rgba(22,163,74,0.5)';
                 }}
                 onMouseLeave={(e) => {
                   e.currentTarget.style.transform = 'translateY(0)';
-                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(255,255,255,0.2)';
+                  e.currentTarget.style.boxShadow = '0 0 40px rgba(0,200,100,0.3), 0 20px 60px rgba(22,163,74,0.4)';
                 }}
               >
-                Learn More
+                Book a Free Call
               </a>
             </div>
           </div>
         </section>
 
-        {/* 8. CASE STUDY SECTION */}
+        {/* 9. CASE STUDY SECTION */}
         <section id="case-study" className="py-40 md:py-48" style={{ background: '#F8F9FA' }}>
           <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
             <div className="text-center mb-16 observe">
@@ -803,7 +884,7 @@ export default function Residential() {
           </div>
         </section>
 
-        {/* 9. FINAL CTA - Minimal Luxury */}
+        {/* 10. FINAL CTA - Minimal Luxury */}
         <section className="py-48 md:py-56 bg-white">
           <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-20 text-center">
             <h2 className="text-5xl md:text-7xl font-bold mb-8 text-[#0B0D10] observe leading-tight">

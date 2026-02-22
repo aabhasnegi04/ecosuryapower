@@ -58,83 +58,223 @@ export default function SolarPanelMonoPerc() {
         </div>
       </section>
 
-      {/* 2. SPECS */}
-      <section className="py-32 md:py-40 bg-zinc-50">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-16 md:gap-20">
-            <div className="text-center">
-              <div className="text-5xl md:text-6xl font-bold text-green-600 leading-tight">390Wp</div>
-              <div className="text-3xl md:text-4xl font-bold text-green-600 mb-4">590Wp</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">Range</div>
+      {/* 2. TECHNICAL FEATURE GRID - Premium Spec Showcase */}
+      <section className="relative py-32 bg-gradient-to-b from-[#f8fafc] to-white">
+        <div className="max-w-7xl mx-auto px-6">
+          
+          {/* Section Header */}
+          <div className="text-center max-w-3xl mx-auto">
+            <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-[#0B0D10]">
+              Engineered for Maximum Efficiency
+            </h2>
+            <p className="mt-5 text-lg text-gray-600">
+              High-efficiency M10 PERC cells with advanced technology for superior performance.
+            </p>
+          </div>
+
+          {/* Spec Grid */}
+          <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+            
+            {/* Spec Card 1 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                390Wp – 590Wp
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                Power Range
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                High-output panels for residential and commercial use.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-green-600 leading-none mb-4">21.21%</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">Efficiency</div>
+
+            {/* Spec Card 2 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                21.21%
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                Peak Efficiency
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Industry-leading conversion efficiency for maximum output.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-green-600 leading-none mb-4">M10</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">PERC Cells</div>
+
+            {/* Spec Card 3 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                M10 PERC
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                Cell Technology
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Advanced PERC cells for enhanced light capture.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
-            <div className="text-center">
-              <div className="text-6xl md:text-7xl font-bold text-green-600 leading-none mb-4">Low</div>
-              <div className="text-xs uppercase tracking-widest text-zinc-500">BOS Cost</div>
+
+            {/* Spec Card 4 */}
+            <div className="group bg-white p-10 rounded-2xl border border-gray-100 shadow-[0_10px_25px_rgba(0,0,0,0.04)] transition duration-300 hover:-translate-y-2 hover:shadow-[0_15px_40px_rgba(0,0,0,0.08)]">
+              <div className="text-green-600 text-3xl md:text-4xl font-semibold">
+                Low BOS
+              </div>
+              <div className="mt-4 text-xs tracking-[0.3em] text-gray-400 uppercase">
+                System Cost
+              </div>
+              <p className="mt-5 text-gray-600 text-sm leading-relaxed">
+                Reduced balance of system costs with fewer panels.
+              </p>
+              <div className="mt-6 h-[2px] w-12 bg-green-600 group-hover:w-20 transition-all duration-300"></div>
             </div>
+
           </div>
         </div>
       </section>
 
-      {/* 3. KEY FEATURES */}
-      <section className="py-24 md:py-32 bg-white">
-        <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
-          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center text-[#0B0D10]">
-            Advanced technology
-          </h2>
+      {/* 3. PRODUCT SHOWCASE - Premium Framed Panel Style */}
+      <section className="relative py-20 lg:py-44 overflow-hidden text-white">
+        {/* Dark Spotlight Background */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#1F3A67_0%,#0C1629_70%)]"></div>
+        
+        {/* Subtle Center Light Layer */}
+        <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.05)_0%,transparent_60%)]"></div>
+        
+        <div className="relative max-w-7xl mx-auto px-6">
           
-          <div className="grid md:grid-cols-2 gap-8">
+          {/* Desktop: Centered Product with Side Callouts */}
+          <div className="hidden lg:flex items-center justify-center relative min-h-[600px]">
             
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Round Ribbon Technology</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Better efficiency with reduced resistance and improved light capture
-              </p>
+            {/* Ambient Glow Behind Frame */}
+            <div className="absolute w-[800px] h-[800px] bg-[radial-gradient(circle,rgba(30,80,160,0.25)_0%,transparent_70%)] blur-3xl"></div>
+            
+            {/* Premium Framed Product Panel */}
+            <div className="relative z-10 bg-gradient-to-b from-[#162B4F] to-[#101D34] p-16 rounded-3xl shadow-[0_80px_140px_rgba(0,0,0,0.85)] border border-white/10 hover:scale-[1.01] transition duration-500 ease-out">
+              <div className="bg-[#F4F6F8] p-8 rounded-2xl shadow-inner">
+                <img 
+                  src="/products/solar-panel-mono-half-cut-mono-perc.png" 
+                  alt="Mono PERC Solar Panel" 
+                  className="w-[340px] mx-auto"
+                />
+              </div>
             </div>
-
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Minimizes Micro Cracks</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Enhanced durability with reduced cell stress and longer lifespan
-              </p>
+            
+            {/* LEFT FEATURES */}
+            <div className="absolute left-0 space-y-20 z-20 -translate-x-32">
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">Round Ribbon Technology</h4>
+                  <p className="text-sm text-white/50 mt-1">Better efficiency & light capture</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">Minimizes Micro Cracks</h4>
+                  <p className="text-sm text-white/50 mt-1">Enhanced durability</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-28 h-[1px] bg-gradient-to-r from-white/10 via-white/30 to-white/60"></div>
+                <div>
+                  <h4 className="text-xl font-semibold tracking-wide">M10 Mono PERC Cells</h4>
+                  <p className="text-sm text-white/50 mt-1">Maximum power output</p>
+                </div>
+              </div>
+              
             </div>
-
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">M10 Mono PERC Cells</h3>
-              <p className="text-[#475063] leading-relaxed">
-                High-efficiency cells for maximum power output per square meter
-              </p>
+            
+            {/* RIGHT FEATURES */}
+            <div className="absolute right-0 space-y-20 z-20 translate-x-32">
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">Works in Partial Light</h4>
+                  <p className="text-sm text-white/50 mt-1">Performs in cloudy conditions</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">Reduces BOS Cost</h4>
+                  <p className="text-sm text-white/50 mt-1">Lower system costs</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
+              <div className="flex items-center gap-4 justify-end">
+                <div className="text-right">
+                  <h4 className="text-xl font-semibold tracking-wide">Easy Installation</h4>
+                  <p className="text-sm text-white/50 mt-1">Simplified mounting</p>
+                </div>
+                <div className="w-28 h-[1px] bg-gradient-to-l from-white/10 via-white/30 to-white/60"></div>
+              </div>
+              
             </div>
-
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Works in Partial Light</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Performs even in cloudy conditions and low-light environments
-              </p>
-            </div>
-
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Reduces BOS Cost</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Lower balance of system costs with fewer panels needed
-              </p>
-            </div>
-
-            <div className="bg-zinc-50 p-8">
-              <h3 className="text-2xl font-bold mb-3 text-[#0B0D10]">Easy Installation</h3>
-              <p className="text-[#475063] leading-relaxed">
-                Simplified mounting and reduced installation time
-              </p>
-            </div>
-
+            
           </div>
+          
+          {/* Mobile: Vertical Stack Layout */}
+          <div className="lg:hidden">
+            
+            {/* Product Frame */}
+            <div className="flex justify-center mb-12">
+              <div className="w-[90%] sm:w-[80%] md:w-[70%] bg-gradient-to-b from-[#162B4F] to-[#101D34] p-8 sm:p-10 md:p-12 rounded-3xl shadow-[0_80px_140px_rgba(0,0,0,0.85)] border border-white/10">
+                <div className="bg-[#F4F6F8] p-6 sm:p-8 rounded-2xl shadow-inner">
+                  <img 
+                    src="/products/solar-panel-mono-half-cut-mono-perc.png" 
+                    alt="Mono PERC Solar Panel" 
+                    className="w-full max-w-[280px] mx-auto"
+                  />
+                </div>
+              </div>
+            </div>
+            
+            {/* Features List */}
+            <div className="mt-12 space-y-8 px-6 text-center max-w-md mx-auto">
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Round Ribbon Technology</h4>
+                <p className="text-white/60 text-sm mt-1">Better efficiency & light capture</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Works in Partial Light</h4>
+                <p className="text-white/60 text-sm mt-1">Performs in cloudy conditions</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Reduces BOS Cost</h4>
+                <p className="text-white/60 text-sm mt-1">Lower system costs</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Easy Installation</h4>
+                <p className="text-white/60 text-sm mt-1">Simplified mounting</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">Minimizes Micro Cracks</h4>
+                <p className="text-white/60 text-sm mt-1">Enhanced durability</p>
+              </div>
+              
+              <div className="bg-white/5 rounded-xl p-5 border-l-2 border-white/20">
+                <h4 className="text-lg font-semibold tracking-wide">M10 Mono PERC Cells</h4>
+                <p className="text-white/60 text-sm mt-1">Maximum power output</p>
+              </div>
+              
+            </div>
+            
+          </div>
+          
         </div>
       </section>
 

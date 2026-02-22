@@ -9,7 +9,7 @@ import Contact from './pages/Contact'
 import Residential from './pages/solutions/Residential'
 import Commercial from './pages/solutions/Commercial'
 import HybridSystems from './pages/solutions/HybridSystems'
-import EnergyStorage from './pages/solutions/EnergyStorage'
+import SolarPanelCleaning from './pages/solutions/SolarPanelCleaning'
 
 // Product pages
 import SolarPanelMonoPerc from './pages/products/SolarPanelMonoPerc'
@@ -39,7 +39,7 @@ function App() {
           <Route path="solutions/residential" element={<Residential />} />
           <Route path="solutions/commercial" element={<Commercial />} />
           <Route path="solutions/hybrid-systems" element={<HybridSystems />} />
-          <Route path="solutions/energy-storage" element={<EnergyStorage />} />
+          <Route path="solutions/solar-panel-cleaning" element={<SolarPanelCleaning />} />
           
           {/* Products - No main products page, only individual product pages */}
           <Route path="products/solar-panel-mono-perc" element={<SolarPanelMonoPerc />} />
