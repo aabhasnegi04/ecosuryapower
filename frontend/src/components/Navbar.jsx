@@ -242,11 +242,11 @@ export default function Navbar() {
     >
       <div className="px-5 md:px-12 lg:px-20">
         <div className="flex items-center justify-between h-24 md:h-32">
-          <Link to="/" className="hover:opacity-80 transition-opacity duration-300">
+          <Link to="/" className={`hover:opacity-80 transition-opacity duration-300 -mt-4 ${isOpen ? 'invisible' : ''}`}>
             <img 
-              src={isLightMode ? "/eco_surya_logo_black_text.jpg" : "/eco_surya_logo.png"} 
+              src="/eco_surya_logo.png"
               alt="Eco Surya" 
-              className={isLightMode ? "h-36 md:h-40 w-auto" : "h-32 md:h-40 w-auto"}
+              className="h-24 md:h-28 w-auto"
             />
           </Link>
 
@@ -523,17 +523,17 @@ export default function Navbar() {
       {isOpen && (
         <motion.div 
           className="md:hidden fixed inset-0 bg-white z-[100] overflow-hidden"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          transition={{ duration: 0.2 }}
+          initial={{ opacity: 0, x: '100%' }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: '100%' }}
+          transition={{ duration: 0.3, ease: [0.4, 0, 0.2, 1] }}
         >
               {/* Mobile Header */}
               <div className="flex items-center justify-between px-6 py-6 border-b border-zinc-200">
                 <img 
-                  src="/eco_surya_logo_black_text.jpg" 
+                  src="/eco_surya_logo.png"
                   alt="Eco Surya" 
-                  className="h-16 w-auto" 
+                  className="h-24 w-auto" 
                 />
                 <button
                   onClick={handleMobileClose}
