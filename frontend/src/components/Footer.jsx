@@ -51,8 +51,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-3 text-base md:text-lg">Quick links</h4>
             <ul className="space-y-2 text-zinc-400 text-sm md:text-base">
-              <li><Link to="/solutions" className="hover:text-white transition-colors">Solutions</Link></li>
-              <li><Link to="/services" className="hover:text-white transition-colors">Services</Link></li>
+              <li><Link to="/solutions/residential" className="hover:text-white transition-colors">Residential Solar</Link></li>
+              <li><Link to="/solutions/commercial" className="hover:text-white transition-colors">Commercial Solar</Link></li>
+              <li><Link to="/solutions/hybrid-systems" className="hover:text-white transition-colors">Hybrid Systems</Link></li>
+              <li><Link to="/solutions/solar-panel-cleaning" className="hover:text-white transition-colors">Panel Cleaning</Link></li>
               <li><Link to="/about" className="hover:text-white transition-colors">About</Link></li>
               <li><Link to="/contact" className="hover:text-white transition-colors">Contact</Link></li>
             </ul>

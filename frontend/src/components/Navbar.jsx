@@ -244,9 +244,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-24 md:h-32">
           <Link to="/" className="hover:opacity-80 transition-opacity duration-300">
             <img 
-              src={isLightMode ? "/eco_surya_logo_black_text.png" : "/eco_surya_logo.png"} 
+              src={isLightMode ? "/eco_surya_logo_black_text.jpg" : "/eco_surya_logo.png"} 
               alt="Eco Surya" 
-              className={isLightMode ? "h-24 md:h-28 w-auto" : "h-32 md:h-40 w-auto"}
+              className={isLightMode ? "h-36 md:h-40 w-auto" : "h-32 md:h-40 w-auto"}
             />
           </Link>
 
@@ -531,9 +531,9 @@ export default function Navbar() {
               {/* Mobile Header */}
               <div className="flex items-center justify-between px-6 py-6 border-b border-zinc-200">
                 <img 
-                  src="/eco_surya_logo_black_text.png" 
+                  src="/eco_surya_logo_black_text.jpg" 
                   alt="Eco Surya" 
-                  className="h-14 w-auto" 
+                  className="h-16 w-auto" 
                 />
                 <button
                   onClick={handleMobileClose}

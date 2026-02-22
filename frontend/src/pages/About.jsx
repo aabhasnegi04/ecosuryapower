@@ -74,23 +74,19 @@ export default function About() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80"></div>
 
           {/* Content */}
-          <div className="relative z-10 w-full px-4 sm:px-6 md:px-12 lg:px-20 py-12 md:py-20 text-center">
-            <div className="max-w-6xl mx-auto">
-              <h1 className="text-[2.5rem] sm:text-[4rem] md:text-[5rem] lg:text-[7rem] font-bold mb-6 md:mb-8 leading-[0.9] tracking-[-0.04em] text-white">
+          <div className="relative z-10 w-full px-6 py-24 md:px-6 text-center">
+            <div className="max-w-4xl mx-auto">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.15] tracking-tight text-white mb-6">
                 Powering India's<br />Energy Independence.
               </h1>
-              <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-12 md:mb-16 text-white/90 leading-relaxed font-light max-w-3xl mx-auto px-4">
+              <p className="text-base sm:text-lg md:text-xl text-white/90 mt-6 mb-10 leading-relaxed max-w-2xl mx-auto">
                 Built for real homes. Real weather. Real reliability.
               </p>
               
-              <div className="flex justify-center items-center px-4">
+              <div className="flex justify-center items-center">
                 <a 
                   href="/contact" 
-                  className="w-full sm:w-auto inline-block bg-green-600 text-white px-10 md:px-12 py-5 md:py-6 text-base md:text-lg font-semibold hover:bg-green-700 transition-all duration-300 text-center"
-                  style={{ 
-                    borderRadius: '14px',
-                    boxShadow: '0 20px 60px rgba(34, 197, 94, 0.4)'
-                  }}
+                  className="inline-block bg-green-600 text-white px-8 py-3 text-sm md:text-base font-semibold rounded-lg hover:bg-green-700 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5"
                 >
                   Get Free Consultation
                 </a>
