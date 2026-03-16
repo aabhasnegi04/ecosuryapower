@@ -1,4 +1,4 @@
-# Netlify configuration for Eco Surya Power website
+# Netlify configuration for EcoSuryaPower website
 
 [build]
   base = "frontend"

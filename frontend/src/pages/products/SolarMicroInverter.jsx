@@ -1,5 +1,14 @@
+import SEO from '../../components/SEO'
+
 export default function SolarMicroInverter() {
   return (
+    <>
+      <SEO
+        title="Solar Micro Inverter - Microsync Series | EcoSuryaPower"
+        description="EcoSuryaPower's Microsync Series solar micro inverters maximise output from each panel individually. Ideal for shaded or complex rooftops in India."
+        keywords="solar micro inverter, microinverter India, panel-level inverter, solar micro inverter India, Microsync Series"
+        url="https://www.ecosuryapower.com/products/solar-micro-inverter"
+      />
     <div className="min-h-screen" style={{ backgroundColor: '#f1f2f2' }}>
       
       {/* 1. HERO */}
@@ -338,5 +347,6 @@ export default function SolarMicroInverter() {
       </div>
 
     </div>
+      </>
   )
 }

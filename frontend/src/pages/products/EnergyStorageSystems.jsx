@@ -1,5 +1,14 @@
+import SEO from '../../components/SEO'
+
 export default function EnergyStorageSystems() {
   return (
+    <>
+      <SEO
+        title="Energy Storage Systems - Solar Battery Solutions | EcoSuryaPower"
+        description="EcoSuryaPower's energy storage systems store excess solar power for use at night or during outages. Lithium-ion and tubular battery options for homes and businesses in India."
+        keywords="energy storage systems India, solar battery storage, lithium ion solar battery, solar energy storage, battery backup India"
+        url="https://www.ecosuryapower.com/products/energy-storage-systems"
+      />
     <div className="min-h-screen" style={{ backgroundColor: '#e5e9ea' }}>
       
       {/* 1. HERO */}
@@ -330,5 +339,6 @@ export default function EnergyStorageSystems() {
       </div>
 
     </div>
+      </>
   )
 }

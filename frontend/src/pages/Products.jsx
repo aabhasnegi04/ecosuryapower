@@ -1,3 +1,5 @@
+import SEO from '../components/SEO'
+
 export default function Products() {
   const productCategories = [
     {
@@ -38,6 +40,13 @@ export default function Products() {
   ]
 
   return (
+    <>
+      <SEO
+        title="Solar Products - Panels, Inverters & Batteries | EcoSuryaPower"
+        description="Explore EcoSuryaPower's full range of solar products — hybrid inverters, on-grid & off-grid inverters, mono PERC panels, tubular batteries & energy storage systems."
+        keywords="solar products India, solar inverters, solar panels, solar batteries, hybrid inverter, on-grid inverter, off-grid inverter, energy storage"
+        url="https://www.ecosuryapower.com/products"
+      />
     <div className="min-h-screen bg-white pt-32 pb-20">
       <div className="px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
         
@@ -109,5 +118,6 @@ export default function Products() {
 
       </div>
     </div>
+    </>
   )
 }

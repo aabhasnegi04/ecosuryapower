@@ -1,5 +1,14 @@
+import SEO from '../../components/SEO'
+
 export default function OnGridSolarInverter() {
   return (
+    <>
+      <SEO
+        title="Single & Three Phase On-Grid Solar Inverter - Solvion Series | EcoSuryaPower"
+        description="EcoSuryaPower's Solvion Series on-grid solar inverters for residential and commercial use. Feed excess power back to the grid and reduce electricity bills across India."
+        keywords="on-grid solar inverter, grid-tied inverter India, single phase solar inverter, three phase solar inverter, Solvion Series"
+        url="https://www.ecosuryapower.com/products/on-grid-solar-inverter"
+      />
     <div className="min-h-screen" style={{ backgroundColor: '#f4f4f3' }}>
       
       {/* 1. HERO */}
@@ -396,5 +405,6 @@ export default function OnGridSolarInverter() {
       </div>
 
     </div>
+      </>
   )
 }

@@ -26,7 +26,7 @@ export default function Residential() {
   return (
     <>
       <SEO 
-        title="Hybrid Solar Systems - Best of Solar, Grid & Battery | Eco Surya"
+        title="Hybrid Solar Systems - Best of Solar, Grid & Battery | EcoSuryaPower"
         description="24/7 uninterrupted power with hybrid solar systems. Automatic switching between solar, battery, and grid. Zero downtime, maximum savings."
         keywords="hybrid solar system, solar battery backup, grid tied with battery, uninterrupted power, solar storage"
         url="https://www.ecosuryapower.com/solutions/hybrid-systems"

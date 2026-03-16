@@ -26,7 +26,7 @@ export default function SolarPanelCleaning() {
   return (
     <>
       <SEO 
-        title="Professional Solar Panel Cleaning Service | Eco Surya"
+        title="Professional Solar Panel Cleaning Service | EcoSuryaPower"
         description="Restore your solar panel efficiency with professional cleaning. Remove dust, dirt & bird droppings. Increase output by up to 25%. Eco-friendly process."
         keywords="solar panel cleaning, solar maintenance, panel cleaning service, solar efficiency, professional cleaning"
         url="https://www.ecosuryapower.com/solutions/solar-panel-cleaning"
@@ -441,7 +441,7 @@ export default function SolarPanelCleaning() {
                   ))}
                 </div>
                 <p className="text-lg text-[#0B0D10] mb-6 italic">
-                  "We have a 50 kW commercial installation. Eco Surya's quarterly cleaning service keeps our panels performing at peak efficiency."
+                  "We have a 50 kW commercial installation. EcoSuryaPower's quarterly cleaning service keeps our panels performing at peak efficiency."
                 </p>
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-blue-600 flex items-center justify-center text-white font-bold text-lg">

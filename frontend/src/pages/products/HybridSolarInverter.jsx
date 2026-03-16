@@ -1,5 +1,14 @@
+import SEO from '../../components/SEO'
+
 export default function HybridSolarInverter() {
   return (
+    <>
+      <SEO
+        title="Hybrid Solar Inverter - Solar, Battery & Grid in One | EcoSuryaPower"
+        description="EcoSuryaPower's Fusion Series hybrid solar inverter combines solar, battery backup and grid power. Ideal for homes and businesses needing uninterrupted power supply in India."
+        keywords="hybrid solar inverter, solar inverter with battery, hybrid inverter India, solar backup inverter, Fusion Series inverter"
+        url="https://www.ecosuryapower.com/products/hybrid-solar-inverter"
+      />
     <div className="min-h-screen bg-white">
       
       {/* 1. HERO */}
@@ -338,5 +347,6 @@ export default function HybridSolarInverter() {
       </div>
 
     </div>
+      </>
   )
 }

@@ -33,7 +33,7 @@ export default function WhyAcube() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.5 }}
           >
-            Why customers trust <span className="text-green-600">Eco Surya</span>
+            Why customers trust <span className="text-green-600">EcoSuryaPower</span>
           </motion.h2>
           <motion.p 
             className="text-sm md:text-base text-zinc-600"
@@ -82,7 +82,7 @@ export default function WhyAcube() {
             <div className="rounded-2xl overflow-hidden shadow-lg mb-5">
               <img 
                 src="/reliability.jpg" 
-                alt="Eco Surya Reliability" 
+                alt="EcoSuryaPower Reliability" 
                 className="w-full h-auto object-cover"
                 loading="lazy"
               />

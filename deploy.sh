@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Eco Surya Power - Deployment Script
+# EcoSuryaPower - Deployment Script
 # This script builds the project for production
 
 echo "🚀 Starting deployment build for www.ecosuryapower.com..."

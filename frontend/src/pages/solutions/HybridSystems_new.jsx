@@ -26,7 +26,7 @@ export default function Residential() {
   return (
     <>
       <SEO 
-        title="Commercial Solar Solutions - Energy Infrastructure for Business | Eco Surya"
+        title="Commercial Solar Solutions - Energy Infrastructure for Business | EcoSuryaPower"
         description="Reduce operational costs with commercial solar. 4-6 year payback, accelerated depreciation, ESG compliance. Built for Indian industries."
         keywords="commercial solar, industrial solar, business solar, factory solar, warehouse solar, reduce energy costs"
         url="https://www.ecosuryapower.com/solutions/commercial"

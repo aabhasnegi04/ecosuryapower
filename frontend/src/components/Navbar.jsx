@@ -245,7 +245,7 @@ export default function Navbar() {
           <Link to="/" className={`hover:opacity-80 transition-opacity duration-300 -mt-4 ${isOpen ? 'invisible' : ''}`}>
             <img 
               src="/eco_surya_logo.png"
-              alt="Eco Surya" 
+              alt="EcoSuryaPower" 
               className="h-24 md:h-28 w-auto"
             />
           </Link>
@@ -532,7 +532,7 @@ export default function Navbar() {
               <div className="flex items-center justify-between px-6 py-6 border-b border-zinc-200">
                 <img 
                   src="/eco_surya_logo.png"
-                  alt="Eco Surya" 
+                  alt="EcoSuryaPower" 
                   className="h-24 w-auto" 
                 />
                 <button

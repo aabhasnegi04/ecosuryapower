@@ -1,5 +1,5 @@
 @echo off
-REM Eco Surya Power - Deployment Script for Windows
+REM EcoSuryaPower - Deployment Script for Windows
 REM This script builds the project for production
 
 echo.

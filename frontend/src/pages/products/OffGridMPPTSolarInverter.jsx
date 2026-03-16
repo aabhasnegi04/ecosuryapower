@@ -1,5 +1,14 @@
+import SEO from '../../components/SEO'
+
 export default function OffGridMPPTSolarInverter() {
   return (
+    <>
+      <SEO
+        title="Off-Grid MPPT Solar Inverter - Flare Series | EcoSuryaPower"
+        description="EcoSuryaPower's Flare Series off-grid MPPT solar inverter delivers reliable power without grid dependency. Perfect for rural areas and locations with frequent power cuts in India."
+        keywords="off-grid MPPT solar inverter, MPPT inverter India, off-grid solar system, solar inverter without grid, Flare Series inverter"
+        url="https://www.ecosuryapower.com/products/off-grid-mppt-solar-inverter"
+      />
     <div className="min-h-screen" style={{ backgroundColor: '#e6e6e6' }}>
       
       {/* 1. HERO */}
@@ -302,5 +311,6 @@ export default function OffGridMPPTSolarInverter() {
       </div>
 
     </div>
+      </>
   )
 }

@@ -1,5 +1,14 @@
+import SEO from '../../components/SEO'
+
 export default function SolarPanelsPoly() {
   return (
+    <>
+      <SEO
+        title="Polycrystalline Solar Panels - Affordable & Reliable | EcoSuryaPower"
+        description="EcoSuryaPower's polycrystalline solar panels offer a cost-effective solution for residential and commercial solar installations across India. Durable, efficient and built for Indian conditions."
+        keywords="polycrystalline solar panels, poly solar panels India, affordable solar panels, solar panels for home, solar panels India"
+        url="https://www.ecosuryapower.com/products/solar-panels-poly"
+      />
     <div className="min-h-screen" style={{ backgroundColor: '#e5e9ea' }}>
       
       {/* 1. HERO */}
@@ -338,5 +347,6 @@ export default function SolarPanelsPoly() {
       </div>
 
     </div>
+      </>
   )
 }

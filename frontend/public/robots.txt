@@ -1,4 +1,4 @@
-# Eco Surya Power - Robots.txt
+# EcoSuryaPower - Robots.txt
 User-agent: *
 Allow: /
 Disallow: /admin/

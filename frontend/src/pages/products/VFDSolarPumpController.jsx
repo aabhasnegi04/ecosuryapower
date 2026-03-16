@@ -1,5 +1,14 @@
+import SEO from '../../components/SEO'
+
 export default function VFDSolarPumpController() {
   return (
+    <>
+      <SEO
+        title="VFD Solar Pump Controller - Sunfarm Series | EcoSuryaPower"
+        description="EcoSuryaPower's Sunfarm Series VFD solar pump controllers enable efficient solar-powered water pumping for agriculture and irrigation across India. No grid required."
+        keywords="VFD solar pump controller, solar water pump India, solar pump controller, agricultural solar pump, Sunfarm Series"
+        url="https://www.ecosuryapower.com/products/vfd-solar-pump-controller"
+      />
     <div className="min-h-screen" style={{ backgroundColor: '#fefefd' }}>
       
       {/* 1. HERO */}
@@ -391,5 +400,6 @@ export default function VFDSolarPumpController() {
       </div>
 
     </div>
+      </>
   )
 }

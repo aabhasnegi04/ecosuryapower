@@ -1,5 +1,14 @@
+import SEO from '../../components/SEO'
+
 export default function OffGridPWMSolarInverter() {
   return (
+    <>
+      <SEO
+        title="Off-Grid PWM Solar Inverter - Elegant Series | EcoSuryaPower"
+        description="EcoSuryaPower's Elegant Series off-grid PWM solar inverter — affordable, reliable power for homes and small businesses not connected to the grid across India."
+        keywords="off-grid PWM solar inverter, PWM inverter India, off-grid solar inverter, solar inverter for home, Elegant Series inverter"
+        url="https://www.ecosuryapower.com/products/off-grid-pwm-solar-inverter"
+      />
     <div className="min-h-screen" style={{ backgroundColor: '#e6e6e6' }}>
       
       {/* 1. HERO */}
@@ -371,5 +380,6 @@ export default function OffGridPWMSolarInverter() {
       </div>
 
     </div>
+      </>
   )
 }

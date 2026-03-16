@@ -1,5 +1,14 @@
+import SEO from '../../components/SEO'
+
 export default function SparkleHybridSolarInverters() {
   return (
+    <>
+      <SEO
+        title="Sparkle Hybrid Solar Inverters - Premium Hybrid Series | EcoSuryaPower"
+        description="EcoSuryaPower's Sparkle Series hybrid solar inverters offer premium performance with smart energy management. Seamlessly switch between solar, battery and grid power."
+        keywords="Sparkle hybrid solar inverter, premium hybrid inverter India, smart solar inverter, hybrid solar system, Sparkle Series"
+        url="https://www.ecosuryapower.com/products/sparkle-hybrid-solar-inverters"
+      />
     <div className="min-h-screen bg-white">
       
       {/* 1. HERO */}
@@ -338,5 +347,6 @@ export default function SparkleHybridSolarInverters() {
       </div>
 
     </div>
+      </>
   )
 }

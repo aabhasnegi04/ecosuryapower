@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async';
 
 export default function SEO({ 
-  title = "Eco Surya - Solar Energy Solutions | Solar Panels & Inverters in India",
+  title = "EcoSuryaPower - Solar Energy Solutions | Solar Panels & Inverters in India",
   description = "Leading solar energy solutions provider in India. Premium solar panels, inverters, batteries & energy storage systems for residential, commercial & industrial projects. Get free consultation.",
   keywords = "solar panels India, solar inverters, solar energy, solar power systems, residential solar, commercial solar, industrial solar",
   image = "/eco_surya_logo.png",

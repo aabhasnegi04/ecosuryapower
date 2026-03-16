@@ -1,5 +1,14 @@
+import SEO from '../components/SEO'
+
 export default function Services() {
   return (
+    <>
+      <SEO
+        title="Solar Installation, Maintenance & AMC Services | EcoSuryaPower"
+        description="End-to-end solar services including professional installation, panel cleaning, performance monitoring, and annual maintenance contracts (AMC). Serving homes & businesses across India."
+        keywords="solar installation India, solar maintenance, solar AMC, panel cleaning service, solar support, solar service India"
+        url="https://www.ecosuryapower.com/services"
+      />
     <div className="min-h-screen bg-white pt-32 pb-20">
       <div className="px-6 md:px-12 lg:px-20 max-w-6xl mx-auto">
         
@@ -96,5 +105,6 @@ export default function Services() {
 
       </div>
     </div>
+    </>
   )
 }

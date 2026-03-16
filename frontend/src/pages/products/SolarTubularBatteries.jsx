@@ -1,5 +1,14 @@
+import SEO from '../../components/SEO'
+
 export default function SolarTubularBatteries() {
   return (
+    <>
+      <SEO
+        title="Solar Tubular Batteries - Long Life Energy Storage | EcoSuryaPower"
+        description="EcoSuryaPower's solar tubular batteries deliver deep-cycle performance and long life for off-grid and hybrid solar systems. Designed for Indian climate conditions."
+        keywords="solar tubular batteries, tubular battery India, solar battery, deep cycle battery, solar storage battery India"
+        url="https://www.ecosuryapower.com/products/solar-tubular-batteries"
+      />
     <div className="min-h-screen" style={{ backgroundColor: '#e3e5e4' }}>
       
       {/* 1. HERO */}
@@ -338,5 +347,6 @@ export default function SolarTubularBatteries() {
       </div>
 
     </div>
+      </>
   )
 }

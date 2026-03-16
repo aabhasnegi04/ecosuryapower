@@ -4,7 +4,7 @@ export default function SolarPanelMonoPerc() {
   return (
     <>
       <SEO 
-        title="Mono PERC Solar Panels - Up to 21.21% Efficiency | Eco Surya"
+        title="Mono PERC Solar Panels - Up to 21.21% Efficiency | EcoSuryaPower"
         description="High-efficiency Mono PERC solar panels (390Wp-590Wp) with M10 cells. Works in partial light, reduces BOS costs. Perfect for Indian rooftops. Get free consultation."
         keywords="mono perc solar panels, half-cut solar panels, M10 solar cells, high efficiency solar panels, solar panels India, 21% efficiency solar panels"
         url="https://www.ecosuryapower.com/products/solar-panel-mono-perc"

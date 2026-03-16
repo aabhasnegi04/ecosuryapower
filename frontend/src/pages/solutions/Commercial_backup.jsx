@@ -26,7 +26,7 @@ export default function Residential() {
   return (
     <>
       <SEO 
-        title="Residential Solar Solutions - Energy Independence for Your Home | Eco Surya"
+        title="Residential Solar Solutions - Energy Independence for Your Home | EcoSuryaPower"
         description="Lower electricity bills with premium residential solar solutions. Reliable backup power, smart monitoring, and 25-year warranty. Built for Indian rooftops."
         keywords="residential solar, home solar panels, rooftop solar, solar for homes, reduce electricity bills, solar power home"
         url="https://www.ecosuryapower.com/solutions/residential"

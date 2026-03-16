@@ -26,7 +26,7 @@ export default function Residential() {
   return (
     <>
       <SEO 
-        title="Energy Storage Solutions - Store Solar Power for 24/7 Use | Eco Surya"
+        title="Energy Storage Solutions - Store Solar Power for 24/7 Use | EcoSuryaPower"
         description="Advanced lithium-ion and tubular battery storage systems. Store excess solar energy, use it at night. Complete energy independence."
         keywords="energy storage, solar battery, lithium ion battery, solar storage system, battery backup, energy independence"
         url="https://www.ecosuryapower.com/solutions/energy-storage"

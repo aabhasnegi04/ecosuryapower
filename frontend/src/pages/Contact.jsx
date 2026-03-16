@@ -63,9 +63,9 @@ Please call me back. Thank you!`;
   return (
     <>
       <SEO 
-        title="Contact Eco Surya - Get Free Solar Consultation"
+        title="Contact EcoSuryaPower - Get Free Solar Consultation"
         description="Get expert solar guidance within 24 hours. Free consultation, transparent pricing, and 25-year performance commitment."
-        keywords="contact eco surya, solar consultation, solar quote india"
+        keywords="contact ecosuryapower, solar consultation, solar quote india"
         url="https://www.ecosuryapower.com/contact"
       />
 
@@ -268,7 +268,7 @@ Please call me back. Thank you!`;
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Eco Surya Location"
+                  title="EcoSuryaPower Location"
                 ></iframe>
               </div>
             </div>
@@ -296,7 +296,7 @@ Please call me back. Thank you!`;
           <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 lg:px-20">
             
             <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-[#0B0D10] observe">
-              Why Choose Eco Surya?
+              Why Choose EcoSuryaPower?
             </h2>
 
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
