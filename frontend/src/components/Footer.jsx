@@ -27,7 +27,7 @@ export default function Footer() {
               </p>
               <p>
                 <a href="tel:+918860015035" className="hover:text-white transition-colors">
-                  Jestin: +91 88600 15035
+                  Jestin: +91 88600 15034
                 </a>
               </p>
               <p>
