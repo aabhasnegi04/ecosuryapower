@@ -27,7 +27,7 @@ export default function About() {
     <>
       <SEO 
         title="About EcoSuryaPower - Engineering India's Solar Future"
-        description="Powering India's transition to clean energy with reliable solar systems built for real-world conditions. 25-year commitment to energy independence."
+        description="Powering India's transition to clean energy with reliable solar systems built for real-world conditions. 25-year life commitment to energy independence."
         keywords="about ecosuryapower, solar company india, solar engineering, renewable energy"
         url="https://www.ecosuryapower.com/about"
       />
@@ -148,7 +148,7 @@ export default function About() {
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4">Future-Ready</h3>
                 <p className="text-lg text-zinc-400 leading-relaxed">
-                  25-year systems built for tomorrow's energy needs.
+                  25-year life systems built for tomorrow's energy needs.
                 </p>
               </div>
 

@@ -64,7 +64,7 @@ Please call me back. Thank you!`;
     <>
       <SEO 
         title="Contact EcoSuryaPower - Get Free Solar Consultation"
-        description="Get expert solar guidance within 24 hours. Free consultation, transparent pricing, and 25-year performance commitment."
+        description="Get expert solar guidance within 24 hours. Free consultation, transparent pricing, and 25-year life commitment."
         keywords="contact ecosuryapower, solar consultation, solar quote india"
         url="https://www.ecosuryapower.com/contact"
       />
@@ -339,7 +339,7 @@ Please call me back. Thank you!`;
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-[#0B0D10] mb-3">
-                  25-Year Commitment
+                  25-Year Life Commitment
                 </h3>
                 <p className="text-zinc-600 leading-relaxed">
                   Comprehensive warranty and lifetime support for your solar investment.

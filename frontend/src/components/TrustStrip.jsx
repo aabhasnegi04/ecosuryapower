@@ -7,7 +7,7 @@ export default function TrustStrip() {
             Trusted by <span className="font-semibold text-black">500+ homes</span>
           </div>
           <div className="text-base md:text-lg lg:text-xl text-zinc-600">
-            <span className="font-semibold text-black">25-year</span> warranty
+            <span className="font-semibold text-black">25-year</span> life
           </div>
           <div className="text-base md:text-lg lg:text-xl text-zinc-600">
             <span className="font-semibold text-black">ISO certified</span>
