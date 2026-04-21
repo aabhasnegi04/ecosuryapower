@@ -269,7 +269,7 @@ export default function About() {
 
               <div className="text-center observe">
                 <div className="text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-green-500 number-glow">25</div>
-                <div className="text-xs md:text-sm uppercase tracking-[0.15em] text-zinc-400">Years Warranty</div>
+                <div className="text-xs md:text-sm uppercase tracking-[0.15em] text-zinc-400">Years Life</div>
               </div>
 
               <div className="text-center observe">
